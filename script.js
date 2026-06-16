@@ -15,7 +15,7 @@ if (menuButton && mobileMenu) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 780) {
+    if (window.innerWidth > 1120) {
       mobileMenu.classList.remove("is-open");
       menuButton.setAttribute("aria-expanded", "false");
     }
