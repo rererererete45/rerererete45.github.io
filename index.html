@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="오재원 | 도시계획·데이터 분석·GIS 개인 이력서 포트폴리오">
+  <title>오재원 | Resume Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="wordmark" href="#top" aria-label="처음으로">
+        <span class="wordmark-symbol">OJ</span>
+        <span>JAEWON OH</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#education">학력·어학</a>
+        <a href="#experience">경력</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#learning">학습 기록</a>
+        <a href="#credentials">자격·교육</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="button button-ghost" type="button" data-print>PDF 저장</button>
+        <a class="button button-primary" href="https://github.com/rerererete45" target="_blank" rel="noreferrer">
+          GitHub ↗
+        </a>
+      </div>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+        <span class="sr-only">메뉴 열기</span>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="모바일 메뉴">
+      <a href="#about">소개</a>
+      <a href="#education">학력·어학</a>
+      <a href="#experience">경력</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#learning">학습 기록</a>
+      <a href="#credentials">자격·교육</a>
+      <button type="button" data-print>PDF 저장</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-layout" id="top">
+      <aside class="profile-column">
+        <section class="profile-card-shell">
+          <div class="profile-card-glow" aria-hidden="true"></div>
+
+          <div class="profile-card" data-profile-tilt>
+            <div class="profile-card-inner">
+              <div class="profile-card-shine" aria-hidden="true"></div>
+              <div class="profile-card-grain" aria-hidden="true"></div>
+
+              <div class="profile-photo-wrap">
+                <img
+                  src="profile.jpg"
+                  alt="오재원 프로필 사진"
+                  class="profile-photo"
+                  onerror="this.onerror=null; this.src='profile-placeholder.svg';"
+                >
+              </div>
+
+              <div class="profile-userbar">
+                <div class="profile-userbar-left">
+                  <div class="mini-avatar">
+                    <img
+                      src="profile.jpg"
+                      alt="오재원 미니 프로필 사진"
+                      onerror="this.onerror=null; this.src='profile-placeholder.svg';"
+                    >
+                  </div>
+                  <div class="profile-usertext">
+                    <strong>@rerererete45</strong>
+                    <span>Urban Planning · Data · GIS</span>
+                  </div>
+                </div>
+                <a class="contact-chip" href="https://github.com/rerererete45" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+
+              <div class="profile-copy">
+                <p class="overline">RESUME PORTFOLIO</p>
+                <h1>오재원</h1>
+                <p class="name-alt">吳栽沅 · Oh Jaewon</p>
+                <p class="role">Urban Planning · Data · GIS</p>
+              </div>
+
+              <p class="profile-summary">
+                도시계획과 공간정보를 기반으로 데이터를 분석하고,
+                결과를 보고서와 프로젝트로 구조화합니다.
+              </p>
+
+              <dl class="profile-facts">
+                <div>
+                  <dt>학력</dt>
+                  <dd>국립한밭대학교 도시공학과 졸업</dd>
+                </div>
+                <div>
+                  <dt>학점</dt>
+                  <dd>3.6 / 4.5</dd>
+                </div>
+                <div>
+                  <dt>병역</dt>
+                  <dd>병역필 · 만기</dd>
+                </div>
+                <div>
+                  <dt>주요 분야</dt>
+                  <dd>도시계획·데이터·GIS</dd>
+                </div>
+              </dl>
+
+              <div class="profile-links">
+                <a href="https://github.com/rerererete45" target="_blank" rel="noreferrer">
+                  <span>GitHub</span><strong>↗</strong>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes" target="_blank" rel="noreferrer">
+                  <span>학습 저장소</span><strong>↗</strong>
+                </a>
+              </div>
+
+              <div class="profile-actions">
+                <a class="button button-primary" href="#projects">프로젝트 보기</a>
+                <button class="button button-ghost" type="button" data-print>PDF 저장</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="availability">
+          <span aria-hidden="true"></span>
+          <p>프로젝트와 학습 기록을 지속적으로 업데이트하고 있습니다.</p>
+        </div>
+      </aside>
+
+      <div class="content-column">
+        <section class="hero" id="about">
+          <p class="section-label">PROFILE</p>
+
+          <div
+            class="true-focus"
+            data-true-focus
+            data-blur="2.2"
+            data-duration="520"
+            data-pause="1500"
+            aria-hidden="true"
+          >
+            <span class="focus-word">도시계획</span>
+            <span class="focus-word">데이터 분석</span>
+            <span class="focus-word">GIS</span>
+            <span class="focus-word">자동화</span>
+            <span class="focus-frame">
+              <i class="focus-corner focus-top-left"></i>
+              <i class="focus-corner focus-top-right"></i>
+              <i class="focus-corner focus-bottom-left"></i>
+              <i class="focus-corner focus-bottom-right"></i>
+            </span>
+          </div>
+          <p class="sr-only">도시계획, 데이터 분석, GIS, 자동화</p>
+
+          <h2>도시계획과 데이터를 연결하는<br>분석형 실무자</h2>
+
+          <p class="type-line">
+            <span
+              class="text-type"
+              data-text-type
+              data-texts='["공공데이터를 분석합니다.","공간정보를 해석합니다.","반복 업무를 자동화합니다."]'
+              data-typing-speed="62"
+              data-deleting-speed="28"
+              data-pause="1450"
+              data-initial-delay="500"
+              aria-hidden="true"
+            ></span>
+            <span class="text-cursor" aria-hidden="true">|</span>
+            <span class="sr-only">공공데이터 분석, 공간정보 해석, 반복 업무 자동화</span>
+          </p>
+
+          <p class="hero-lead">
+            도시·지역계획 실무에서 자료조사, 현황분석, 타당성 검토와 보고서 작성을 수행해 왔습니다.
+            공공데이터와 공간정보를 활용해 문제를 구조화하고, Python·SQL·PyQGIS·머신러닝을
+            학습하며 분석 및 자동화 역량을 확장하고 있습니다.
+          </p>
+
+          <div class="hero-summary">
+            <article>
+              <span>01</span>
+              <strong>도시·지역계획</strong>
+              <p>현황분석, 계획 검토, 타당성 검토</p>
+            </article>
+            <article>
+              <span>02</span>
+              <strong>데이터 분석</strong>
+              <p>수집, 정제, 분석, 시각화, 해석</p>
+            </article>
+            <article>
+              <span>03</span>
+              <strong>GIS·자동화</strong>
+              <p>공간분석과 반복 업무 개선</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" id="education">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">EDUCATION & LANGUAGE</p>
+              <h2>학력·어학</h2>
+            </div>
+            <p>공개 포트폴리오에 필요한 학력과 어학 정보만 정리했습니다.</p>
+          </header>
+
+          <div class="two-column-block">
+            <article class="education-card">
+              <div class="card-topline">
+                <span>EDUCATION</span>
+                <time>2018.03–2025.02</time>
+              </div>
+              <h3>국립한밭대학교</h3>
+              <p class="accent-text">도시공학과 · 졸업</p>
+              <dl>
+                <div><dt>학위 과정</dt><dd>학사</dd></div>
+                <div><dt>학점</dt><dd>3.6 / 4.5</dd></div>
+              </dl>
+            </article>
+
+            <article class="language-card">
+              <div class="card-topline">
+                <span>LANGUAGE</span>
+                <time>2024.09.20</time>
+              </div>
+              <h3>OPIc</h3>
+              <p class="language-score">IM2</p>
+              <p>추가 어학성적은 동일한 형식으로 확장할 수 있습니다.</p>
+            </article>
+          </div>
+
+          <p class="section-note">
+            초·중·고 학력, 정확한 생년월일, 성별, 상세 주소, 전화번호, 개인 이메일,
+            국가보훈 여부, 군번과 상세 복무기간은 공개 페이지에서 제외했습니다.
+          </p>
+        </section>
+
+        <section class="resume-section" id="experience">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">EXPERIENCE</p>
+              <h2>경력·연구</h2>
+            </div>
+            <p>기관, 수행기간, 주요 역할을 이력서형 타임라인으로 정리했습니다.</p>
+          </header>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-period">2025.10.13–</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-primary">PROFESSIONAL</span>
+                <h3>학술연구</h3>
+                <p class="organization">(재)한국종합경제연구원</p>
+                <p>도시·지역계획 관련 자료조사, 현황분석, 타당성 검토와 보고서 작성</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2025.01.01–09.30</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-sky">INTERNSHIP</span>
+                <h3>유성형 공공일자리(공공빅데이터 청년 인턴십)</h3>
+                <p class="organization">유성구청</p>
+                <p>공공데이터 수집·정제·분석 및 분석 결과 보고서 작성</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2024.05.01–12.19</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-violet">RESEARCH</span>
+                <h3>상호관련성에 기반한 도시의 네트워크와 영향력에 관한 예측 연구</h3>
+                <p class="organization">한국연구재단</p>
+                <p>도시 네트워크의 상호관련성과 영향력을 다루는 R&amp;D·교통 분야 예측 연구</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2024.01.01–12.19</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-violet">RESEARCH</span>
+                <h3>빅데이터 기반 인공지능 도시계획 기술 개발</h3>
+                <p class="organization">국토교통과학기술진흥원</p>
+                <p>빅데이터와 인공지능을 활용한 도시계획 기술 개발 연구 참여</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" id="projects">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">SELECTED WORK</p>
+              <h2>대표 프로젝트</h2>
+            </div>
+            <p>공개된 결과물과 준비 중인 프로젝트를 구분했습니다.</p>
+          </header>
+
+          <div class="project-list">
+            <article class="project-card project-featured">
+              <div class="project-index">01</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-green">PUBLIC</span>
+                  <span>Automation · Documentation</span>
+                </div>
+                <h3>한글 스타일 파일 기반 문서 자동화</h3>
+                <p>
+                  한글 <code>.sty</code> 스타일 파일을 기반으로 문서 작성과 스타일 적용 과정을
+                  체계화한 프롬프트·스크립트 활용 가이드입니다.
+                </p>
+                <div class="tag-list">
+                  <span>HWP</span><span>JavaScript Macro</span><span>Prompt Design</span>
+                </div>
+                <a href="https://github.com/rerererete45/hwp-style-automation" target="_blank" rel="noreferrer">
+                  저장소 보기 ↗
+                </a>
+              </div>
+              <div class="project-preview preview-document" aria-hidden="true">
+                <i>[제목]</i><i>[본문]</i><i>[표내용]</i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">02</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-amber">IN PROGRESS</span>
+                  <span>Data Analysis</span>
+                </div>
+                <h3>공공데이터 분석 프로젝트</h3>
+                <p>지역 현황을 분석하고 지표, 표, 그래프와 해석 결과로 정리할 예정입니다.</p>
+                <div class="tag-list"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
+              </div>
+              <div class="project-preview preview-chart" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">03</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-amber">IN PROGRESS</span>
+                  <span>GIS</span>
+                </div>
+                <h3>PyQGIS 공간분석 프로젝트</h3>
+                <p>공간자료 전처리와 중첩 분석을 수행하고 반복 작업을 PyQGIS로 자동화할 예정입니다.</p>
+                <div class="tag-list"><span>QGIS</span><span>PyQGIS</span><span>Spatial Analysis</span></div>
+              </div>
+              <div class="project-preview preview-map" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">04</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-amber">IN PROGRESS</span>
+                  <span>Machine Learning</span>
+                </div>
+                <h3>머신러닝 예측 프로젝트</h3>
+                <p>전처리, 모델 비교, 성능 평가와 오류 분석을 재현 가능한 과정으로 정리할 예정입니다.</p>
+                <div class="tag-list"><span>Scikit-learn</span><span>Modeling</span><span>Evaluation</span></div>
+              </div>
+              <div class="project-preview preview-network" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" id="skills">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">SKILLS</p>
+              <h2>기술</h2>
+            </div>
+            <p>실무와 학습 과정에서 사용한 도구를 기능 중심으로 정리했습니다.</p>
+          </header>
+
+          <div class="skill-grid">
+            <article><span>DATA</span><h3>Python · SQL · Excel · SPSS</h3><p>데이터 처리, 통계 분석, 집계, 시각화, 결과표 작성</p></article>
+            <article><span>GIS</span><h3>QGIS · PyQGIS · Web GIS</h3><p>공간분석, 좌표계, 지오프로세싱, 반복 작업 자동화</p></article>
+            <article><span>AI</span><h3>Machine Learning · PyTorch</h3><p>전처리, 모델 학습, 성능 평가, 신경망 구현</p></article>
+            <article><span>DESIGN</span><h3>AutoCAD · GTQ</h3><p>도면 작성, 건축도면설계, 그래픽 편집</p></article>
+            <article><span>DOCUMENT</span><h3>HWP · PowerPoint · Report</h3><p>보고서 작성, 제안서 구성, 문서 스타일 자동화</p></article>
+          </div>
+        </section>
+
+        <section class="resume-section learning-section" id="learning">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">CURRENT LEARNING</p>
+              <h2>현재 학습 기록</h2>
+            </div>
+            <p>자격시험 준비와 데이터·AI·공간정보 학습을 GitHub에 분야별로 정리합니다.</p>
+          </header>
+
+          <div class="learning-grid">
+            <a class="learning-card learning-wide" href="https://github.com/rerererete45/certification-notes/tree/main/information-processing" target="_blank" rel="noreferrer">
+              <span class="learning-number">01</span>
+              <div><strong>정보처리기사 실기</strong><p>프로그래밍 언어, SQL, 데이터베이스, 소프트웨어 개발 보안</p></div>
+              <small>자격시험</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/cadastral-engineer/written" target="_blank" rel="noreferrer">
+              <span class="learning-number">02</span>
+              <div><strong>지적기사 필기</strong><p>지적측량, 응용측량, 지적학, 관계법규</p></div>
+              <small>자격시험</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/cadastral-engineer/practical" target="_blank" rel="noreferrer">
+              <span class="learning-number">03</span>
+              <div><strong>지적기사 실기</strong><p>측량 계산, 측량성과, 실무 문제</p></div>
+              <small>자격시험</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/data-analysis" target="_blank" rel="noreferrer">
+              <span class="learning-number">04</span>
+              <div><strong>데이터 분석</strong><p>Python, NumPy, Pandas, 시각화</p></div>
+              <small>Data</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/statistics" target="_blank" rel="noreferrer">
+              <span class="learning-number">05</span>
+              <div><strong>통계학</strong><p>확률분포, 추정, 검정, 회귀, 분산분석</p></div>
+              <small>Statistics</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/sql" target="_blank" rel="noreferrer">
+              <span class="learning-number">06</span>
+              <div><strong>SQL</strong><p>조회, 조인, 집계, 서브쿼리, 윈도 함수</p></div>
+              <small>Database</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/machine-learning" target="_blank" rel="noreferrer">
+              <span class="learning-number">07</span>
+              <div><strong>머신러닝</strong><p>전처리, 회귀, 분류, 평가, 튜닝</p></div>
+              <small>AI</small>
+            </a>
+            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/deep-learning-pytorch" target="_blank" rel="noreferrer">
+              <span class="learning-number">08</span>
+              <div><strong>딥러닝·PyTorch</strong><p>텐서, 자동미분, 신경망, 모델 학습</p></div>
+              <small>Deep Learning</small>
+            </a>
+            <a class="learning-card learning-wide" href="https://github.com/rerererete45/certification-notes/tree/main/pyqgis" target="_blank" rel="noreferrer">
+              <span class="learning-number">09</span>
+              <div><strong>QGIS·PyQGIS</strong><p>공간자료 처리, 지오프로세싱, 지도 시각화, 반복 작업 자동화</p></div>
+              <small>GIS</small>
+            </a>
+          </div>
+        </section>
+
+        <section class="resume-section" id="credentials">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">CREDENTIALS</p>
+              <h2>자격·교육</h2>
+            </div>
+            <p>취득 자격증과 수료 교육을 기관·취득일·교육시간 기준으로 정리했습니다.</p>
+          </header>
+
+          <div class="credential-summary">
+            <article><strong>10</strong><span>취득 자격증</span></article>
+            <article><strong>5</strong><span>교육·활동</span></article>
+            <article><strong>88H</strong><span>확인된 교육시간</span></article>
+          </div>
+
+          <div class="subsection">
+            <div class="subsection-title">
+              <h3>취득 자격증</h3>
+              <span>기관·취득일</span>
+            </div>
+
+            <div class="credential-table" role="list">
+              <div role="listitem"><strong>빅데이터분석기사</strong><span>한국데이터산업진흥원</span><time>2024.12.20</time></div>
+              <div role="listitem"><strong>도시계획기사</strong><span>한국산업인력공단</span><time>2024.09.10</time></div>
+              <div role="listitem"><strong>Autodesk Certified User: AutoCAD®</strong><span>Certiport</span><time>2024.07.11</time></div>
+              <div role="listitem"><strong>컴퓨터활용능력 1급</strong><span>대한상공회의소</span><time>2023.12.22</time></div>
+              <div role="listitem"><strong>자동차운전면허 2종 보통</strong><span>한국도로교통공단</span><time>2023.02.02</time></div>
+              <div role="listitem"><strong>도로교통사고감정사</strong><span>한국도로교통공단</span><time>2022.11.01</time></div>
+              <div role="listitem"><strong>GTQ(그래픽기술자격) 1급</strong><span>한국생산성본부</span><time>2022.08.12</time></div>
+              <div role="listitem"><strong>ITQ 한글엑셀(한셀) C등급</strong><span>한국생산성본부</span><time>2011.12.01</time></div>
+              <div role="listitem"><strong>ITQ 아래한글 B등급</strong><span>한국생산성본부</span><time>2011.03.17</time></div>
+              <div role="listitem"><strong>ITQ 한글파워포인트(한쇼) A등급</strong><span>한국생산성본부</span><time>2010.10.05</time></div>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <div class="subsection-title">
+              <h3>교육·활동</h3>
+              <span>기관·기간·교육시간</span>
+            </div>
+
+            <div class="education-list">
+              <article>
+                <div><h4>2024년 도시재생대학</h4><p>도시재생 지역역량강화 교육</p></div>
+                <span>대전광역시</span>
+                <time>2024.03.19–03.28 · 16H</time>
+              </article>
+              <article>
+                <div><h4>AutoCAD 활용 건축도면설계 자격과정</h4><p>AutoCAD 활용 건축도면설계 실습</p></div>
+                <span>국가공인자격검정센터</span>
+                <time>2024.07.09–07.11 · 24H</time>
+              </article>
+              <article>
+                <div><h4>대전시 스마트도시계획 수립 리빙랩 시민참여단</h4><p>시민참여를 통한 도시문제 해결방안 도출</p></div>
+                <span>대전광역시</span>
+                <time>2024.08.20–09.30 · 12H</time>
+              </article>
+              <article>
+                <div><h4>오픈소스 GIS 기반 스프링부트 웹 개발 과정</h4><p>Web GIS와 Spring Boot 기반 개발 학습</p></div>
+                <span>LX공간정보아카데미</span>
+                <time>2026.02.09–02.10 · 14H</time>
+              </article>
+              <article>
+                <div><h4>오픈소스 GIS 서비스 개발자 입문 과정</h4><p>오픈소스 GIS 서비스 개발 기초</p></div>
+                <span>LX공간정보아카데미</span>
+                <time>2026.03.25–03.27 · 22H</time>
+              </article>
+            </div>
+          </div>
+
+          <p class="privacy-note">
+            자격번호와 증빙파일은 개인정보 보호를 위해 공개 페이지에서 제외했습니다.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>오재원 · Resume Portfolio</strong>
+        <p>Urban Planning · Data · GIS · Automation</p>
+      </div>
+      <a href="https://github.com/rerererete45" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
