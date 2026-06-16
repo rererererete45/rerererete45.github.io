@@ -218,8 +218,8 @@
             <p>공개 포트폴리오에 필요한 학력과 어학 정보만 정리했습니다.</p>
           </header>
 
-          <div class="two-column-block">
-            <article class="education-card">
+          <div class="resume-overview-grid">
+            <article class="education-card overview-card">
               <div class="card-topline">
                 <span>EDUCATION</span>
                 <time>2018.03–2025.02</time>
@@ -232,7 +232,33 @@
               </dl>
             </article>
 
-            <article class="language-card">
+            <article class="key-cert-card overview-card">
+              <div class="card-topline">
+                <span>KEY CERTIFICATIONS</span>
+                <span>4 SELECTED</span>
+              </div>
+              <h3>핵심 자격</h3>
+              <ul class="key-cert-list">
+                <li>
+                  <strong>빅데이터분석기사</strong>
+                  <span>데이터 분석</span>
+                </li>
+                <li>
+                  <strong>도시계획기사</strong>
+                  <span>도시계획</span>
+                </li>
+                <li>
+                  <strong>Autodesk Certified User: AutoCAD®</strong>
+                  <span>CAD</span>
+                </li>
+                <li>
+                  <strong>컴퓨터활용능력 1급</strong>
+                  <span>OA</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="language-card overview-card">
               <div class="card-topline">
                 <span>LANGUAGE</span>
                 <time>2024.09.20</time>
@@ -416,52 +442,108 @@
             <p>자격시험 준비와 데이터·AI·공간정보 학습을 GitHub에 분야별로 정리합니다.</p>
           </header>
 
-          <div class="learning-grid">
-            <a class="learning-card learning-wide" href="https://github.com/rerererete45/certification-notes/tree/main/information-processing" target="_blank" rel="noreferrer">
-              <span class="learning-number">01</span>
-              <div><strong>정보처리기사 실기</strong><p>프로그래밍 언어, SQL, 데이터베이스, 소프트웨어 개발 보안</p></div>
-              <small>자격시험</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/cadastral-engineer/written" target="_blank" rel="noreferrer">
-              <span class="learning-number">02</span>
-              <div><strong>지적기사 필기</strong><p>지적측량, 응용측량, 지적학, 관계법규</p></div>
-              <small>자격시험</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/cadastral-engineer/practical" target="_blank" rel="noreferrer">
-              <span class="learning-number">03</span>
-              <div><strong>지적기사 실기</strong><p>측량 계산, 측량성과, 실무 문제</p></div>
-              <small>자격시험</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/data-analysis" target="_blank" rel="noreferrer">
-              <span class="learning-number">04</span>
-              <div><strong>데이터 분석</strong><p>Python, NumPy, Pandas, 시각화</p></div>
-              <small>Data</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/statistics" target="_blank" rel="noreferrer">
-              <span class="learning-number">05</span>
-              <div><strong>통계학</strong><p>확률분포, 추정, 검정, 회귀, 분산분석</p></div>
-              <small>Statistics</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/sql" target="_blank" rel="noreferrer">
-              <span class="learning-number">06</span>
-              <div><strong>SQL</strong><p>조회, 조인, 집계, 서브쿼리, 윈도 함수</p></div>
-              <small>Database</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/machine-learning" target="_blank" rel="noreferrer">
-              <span class="learning-number">07</span>
-              <div><strong>머신러닝</strong><p>전처리, 회귀, 분류, 평가, 튜닝</p></div>
-              <small>AI</small>
-            </a>
-            <a class="learning-card" href="https://github.com/rerererete45/certification-notes/tree/main/deep-learning-pytorch" target="_blank" rel="noreferrer">
-              <span class="learning-number">08</span>
-              <div><strong>딥러닝·PyTorch</strong><p>텐서, 자동미분, 신경망, 모델 학습</p></div>
-              <small>Deep Learning</small>
-            </a>
-            <a class="learning-card learning-wide" href="https://github.com/rerererete45/certification-notes/tree/main/pyqgis" target="_blank" rel="noreferrer">
-              <span class="learning-number">09</span>
-              <div><strong>QGIS·PyQGIS</strong><p>공간자료 처리, 지오프로세싱, 지도 시각화, 반복 작업 자동화</p></div>
-              <small>GIS</small>
-            </a>
+          <div class="learning-groups">
+            <section class="learning-group">
+              <header class="learning-group-header">
+                <div>
+                  <span>01</span>
+                  <h3>자격시험 준비</h3>
+                </div>
+                <small>Certification</small>
+              </header>
+
+              <div class="learning-items">
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/information-processing" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>정보처리기사 실기</strong>
+                    <p>프로그래밍, SQL, 데이터베이스, 소프트웨어 개발 보안</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/cadastral-engineer/written" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>지적기사 필기</strong>
+                    <p>지적측량, 응용측량, 지적학, 관계법규</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/cadastral-engineer/practical" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>지적기사 실기</strong>
+                    <p>측량 계산, 측량성과, 실무 문제</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+              </div>
+            </section>
+
+            <section class="learning-group">
+              <header class="learning-group-header">
+                <div>
+                  <span>02</span>
+                  <h3>데이터·통계</h3>
+                </div>
+                <small>Data</small>
+              </header>
+
+              <div class="learning-items">
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/data-analysis" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>데이터 분석</strong>
+                    <p>Python, NumPy, Pandas, 시각화</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/statistics" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>통계학</strong>
+                    <p>확률분포, 추정, 검정, 회귀, 분산분석</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/sql" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>SQL</strong>
+                    <p>조회, 조인, 집계, 서브쿼리, 윈도 함수</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+              </div>
+            </section>
+
+            <section class="learning-group">
+              <header class="learning-group-header">
+                <div>
+                  <span>03</span>
+                  <h3>AI·공간정보</h3>
+                </div>
+                <small>AI · GIS</small>
+              </header>
+
+              <div class="learning-items">
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/machine-learning" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>머신러닝</strong>
+                    <p>전처리, 회귀, 분류, 평가, 튜닝</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/deep-learning-pytorch" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>딥러닝·PyTorch</strong>
+                    <p>텐서, 자동미분, 신경망, 모델 학습</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com/rerererete45/certification-notes/tree/main/pyqgis" target="_blank" rel="noreferrer">
+                  <div>
+                    <strong>QGIS·PyQGIS</strong>
+                    <p>공간자료 처리, 지오프로세싱, 지도 시각화, 자동화</p>
+                  </div>
+                  <span>↗</span>
+                </a>
+              </div>
+            </section>
           </div>
         </section>
 
