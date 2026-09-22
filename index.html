@@ -367,15 +367,7 @@
                   <summary>방법·결과 자세히 보기</summary>
 
                   <figure class="method-diagram">
-                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 데이터 수집 → 데이터 전처리 → GIS 공간분석 → 사고 다발구간 선정">
-                      <span class="flow-step">데이터 수집</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">데이터 전처리</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">GIS 공간분석</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">사고 다발구간 선정</span>
-                    </div>
+                    <img src="assets/projects/motorcycle-process.png" width="1187" height="667" alt="분석 프로세스: 1.데이터 수집 → 2.데이터 전처리 → 3.GIS 공간분석 → 4.이륜차 사고 다발구간 선정">
                     <figcaption>분석 프로세스</figcaption>
                   </figure>
 
@@ -392,6 +384,10 @@
                       <dt>방법</dt>
                       <dd>
                         교차로 중심점 기준 좌표를 통일하고 「도로교통법 시행규칙」 위험지수 산식과 TAAS 분석 반경(100m)을 적용해 교차로별 ARI를 산정했습니다. ARI 분포 상위 2.5% 교차로를 고위험 구간으로 분류한 뒤, 요일·시간대·연령·도로유형별 특성을 전체와 비교해 자치구 단독·협력형 대응 전략으로 구분했습니다.
+                        <figure class="method-diagram">
+                          <img src="assets/projects/motorcycle-ari-example.png" width="914" height="552" alt="ARI 측정 방식 예시: 반경 100m 내 사고를 결합해 가상의 A교차로 위험지수를 산정하는 과정">
+                          <figcaption>ARI 측정 방식 (예시, 가상 데이터)</figcaption>
+                        </figure>
                         <div class="formula-box">
                           <p class="formula">ARI = √(KSI² + 사고건수²) / 년</p>
                           <p class="formula-note">KSI(사고심각성 대표지표) = 사망자수 + 중상자수 · 사고건수 = 인명피해사고건수<br>「도로교통법 시행규칙」 제8조의2·[별표6의2]</p>
