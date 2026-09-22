@@ -608,6 +608,7 @@ code {
 }
 .project-detail-body dd {
   margin: 4px 0 0; color: var(--text-soft); font-size: .84rem; line-height: 1.6;
+  display: flow-root;
 }
 
 .method-diagram { margin: 0 0 14px; }
@@ -617,6 +618,12 @@ code {
 }
 .method-diagram figcaption {
   margin: 8px 0 0; color: var(--muted); font-size: .68rem; font-weight: 700;
+}
+
+.method-diagram-float {
+  float: right;
+  width: 148px;
+  margin: 4px 0 10px 16px;
 }
 .flow-diagram {
   display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
@@ -1015,6 +1022,11 @@ code {
 
   .side-project-list {
     grid-template-columns: 1fr;
+  }
+
+  .method-diagram-float {
+    width: 112px;
+    margin: 4px 0 8px 12px;
   }
 
   .learning-items a {
