@@ -614,7 +614,7 @@ code {
 .side-project-heading {
   margin: 46px 0 16px; color: var(--muted); font-size: .78rem; font-weight: 700;
 }
-.side-project-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+.side-project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
 .side-project-card {
   padding: 18px 20px; border-radius: 16px; background: var(--surface-soft);
 }
@@ -623,7 +623,7 @@ code {
 .side-project-card a { color: var(--primary); font-size: .74rem; font-weight: 800; }
 
 .project-preview {
-  position: relative; min-height: 170px; overflow: hidden;
+  position: relative; height: 170px; align-self: start; overflow: hidden;
   border-radius: 15px; background: var(--surface-soft);
 }
 .preview-document {
