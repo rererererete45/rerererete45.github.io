@@ -610,6 +610,32 @@ code {
   margin: 4px 0 0; color: var(--text-soft); font-size: .84rem; line-height: 1.6;
 }
 
+.method-diagram { margin: 0 0 14px; }
+.method-diagram figcaption {
+  margin: 8px 0 0; color: var(--muted); font-size: .68rem; font-weight: 700;
+}
+.flow-diagram {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+}
+.flow-step {
+  padding: 9px 13px; border-radius: 10px;
+  background: var(--primary-soft); color: var(--primary-dark);
+  font-size: .74rem; font-weight: 700; white-space: nowrap;
+}
+.flow-arrow { color: var(--muted); font-weight: 700; }
+
+.formula-box {
+  margin: 12px 0 0; padding: 16px 18px;
+  border-radius: 14px; background: var(--surface-soft); border: 1px solid var(--surface-mid);
+  text-align: center;
+}
+.formula-box .formula {
+  margin: 0; color: var(--text); font-size: 1.02rem; font-weight: 800; letter-spacing: -.01em;
+}
+.formula-box .formula-note {
+  margin: 8px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.6;
+}
+
 .side-project-heading {
   margin: 46px 0 16px; color: var(--muted); font-size: .78rem; font-weight: 700;
 }
