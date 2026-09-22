@@ -228,79 +228,33 @@ code {
   pointer-events: none;
 }
 
-.profile-flip {
-  display: block;
-  width: 132px;
-  aspect-ratio: 4 / 5;
-  margin: 4px auto 0;
-  padding: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
-  perspective: 900px;
-}
-.profile-flip:focus-visible .profile-flip-inner {
-  outline: 2px solid var(--primary);
-  outline-offset: 3px;
-}
-
-.profile-flip-inner {
+.profile-monogram {
   position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 18px;
-  transition: transform .55s cubic-bezier(.22, .8, .28, 1);
-  transform-style: preserve-3d;
-}
-.profile-flip:hover .profile-flip-inner,
-.profile-flip:focus-visible .profile-flip-inner,
-.profile-flip.is-flipped .profile-flip-inner {
-  transform: rotateY(180deg);
-}
-
-.profile-flip-front,
-.profile-flip-back {
-  position: absolute;
-  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 132px;
+  aspect-ratio: 4 / 5;
+  margin: 4px auto 0;
   overflow: hidden;
   border-radius: 18px;
-  backface-visibility: hidden;
+  background: linear-gradient(145deg, #ebe9ff, #eef5ff);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.8);
 }
-
-.profile-flip-front {
-  background: linear-gradient(145deg, #ebe9ff, #eef5ff);
-}
-.profile-flip-front::before {
+.profile-monogram::before {
   content: "";
   position: absolute; inset: 0;
   background:
     radial-gradient(circle at 24% 22%, rgba(255,255,255,.9), transparent 40%),
     radial-gradient(circle at 78% 82%, rgba(117,82,200,.16), transparent 46%);
 }
-.profile-flip-front span {
+.profile-monogram span {
   position: relative;
-  font-size: 1.05rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  letter-spacing: .1em;
+  letter-spacing: -.02em;
   color: var(--primary);
   opacity: .82;
-}
-
-.profile-flip-back {
-  transform: rotateY(180deg);
-  background: var(--surface-soft);
-}
-.profile-photo {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center top;
 }
 
 .profile-userbar {
@@ -508,7 +462,7 @@ code {
 }
 .accent-text { margin: 0; color: var(--primary); font-weight: 700; }
 .education-card dl {
-  display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
   gap: 8px; margin: 24px 0 0;
 }
 .education-card dl div { padding: 13px; border-radius: 12px; background: var(--surface-soft); }
@@ -1045,8 +999,6 @@ code {
   }
   .project-detail summary { display: none; }
   .project-detail-body { display: grid !important; }
-  .profile-flip-inner { transform: rotateY(180deg) !important; transition: none !important; }
-  .profile-flip { cursor: default; }
   .page-layout {
     width: 100%; padding: 0;
     grid-template-columns: 210px 1fr; gap: 28px;

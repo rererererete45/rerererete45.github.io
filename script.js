@@ -26,15 +26,6 @@ document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
 
-const profileFlip = document.querySelector("[data-profile-flip]");
-
-if (profileFlip) {
-  profileFlip.addEventListener("click", () => {
-    const isFlipped = profileFlip.classList.toggle("is-flipped");
-    profileFlip.setAttribute("aria-pressed", String(isFlipped));
-  });
-}
-
 const tiltCard = document.querySelector("[data-profile-tilt]");
 
 if (tiltCard && window.innerWidth > 780) {
