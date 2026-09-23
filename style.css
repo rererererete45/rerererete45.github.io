@@ -1074,146 +1074,18 @@ code {
 }
 
 
-/* React Bits TrueFocus를 정적 HTML/CSS/JS에 맞게 재구성 */
-.true-focus {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.72rem;
-  width: max-content;
-  max-width: 100%;
-  margin: 0 0 22px;
-  padding: 10px 2px;
-  user-select: none;
-}
-
-.focus-word {
-  position: relative;
-  z-index: 1;
-  color: var(--text);
-  font-size: clamp(0.9rem, 1.35vw, 1.05rem);
+.hero-keywords {
+  margin: 0 0 20px;
+  color: var(--primary);
+  font-size: 0.86rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
-  transition: filter 0.52s ease, color 0.3s ease, opacity 0.3s ease;
-}
-
-.focus-word.is-active {
-  color: var(--primary);
-}
-
-.focus-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  box-sizing: border-box;
-  pointer-events: none;
-  opacity: 0;
-  transform: translate3d(0, 0, 0);
-  transition:
-    transform 0.52s cubic-bezier(.22,.61,.36,1),
-    width 0.52s cubic-bezier(.22,.61,.36,1),
-    height 0.52s cubic-bezier(.22,.61,.36,1),
-    opacity 0.22s ease;
-}
-
-.focus-frame.is-visible {
-  opacity: 1;
-}
-
-.focus-corner {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border: 2px solid var(--primary);
-  border-radius: 3px;
-  filter: drop-shadow(0 0 4px rgba(87,83,217,.28));
-}
-
-.focus-top-left {
-  top: -7px;
-  left: -7px;
-  border-right: 0;
-  border-bottom: 0;
-}
-
-.focus-top-right {
-  top: -7px;
-  right: -7px;
-  border-left: 0;
-  border-bottom: 0;
-}
-
-.focus-bottom-left {
-  bottom: -7px;
-  left: -7px;
-  border-right: 0;
-  border-top: 0;
-}
-
-.focus-bottom-right {
-  right: -7px;
-  bottom: -7px;
-  border-left: 0;
-  border-top: 0;
-}
-
-/* React Bits TextType를 정적 HTML/CSS/JS에 맞게 재구성 */
-.type-line {
-  min-height: 1.8em;
-  margin: 22px 0 0;
-  color: var(--primary);
-  font-size: clamp(1rem, 1.55vw, 1.16rem);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-}
-
-.text-type {
-  display: inline;
-  white-space: pre-wrap;
-}
-
-.text-cursor {
-  display: inline-block;
-  margin-left: 0.15rem;
-  color: var(--primary);
-  font-weight: 500;
-  animation: text-cursor-blink 0.72s steps(1, end) infinite;
-}
-
-@keyframes text-cursor-blink {
-  0%, 48% { opacity: 1; }
-  49%, 100% { opacity: 0; }
+  letter-spacing: -0.01em;
 }
 
 @media (max-width: 780px) {
-  .true-focus {
-    width: 100%;
-    gap: 0.58rem;
-    margin-bottom: 18px;
-  }
-
-  .focus-word {
-    font-size: 0.88rem;
-  }
-
-  .type-line {
-    margin-top: 18px;
-    font-size: 1rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .focus-word {
-    filter: none !important;
-    opacity: 1 !important;
-  }
-
-  .focus-frame,
-  .text-cursor {
-    display: none !important;
+  .hero-keywords {
+    font-size: 0.8rem;
+    margin-bottom: 16px;
   }
 }
 
