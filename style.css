@@ -610,6 +610,14 @@ code {
   margin: 4px 0 0; color: var(--text-soft); font-size: .84rem; line-height: 1.6;
   display: flow-root;
 }
+.project-detail-body dd ul {
+  margin: 0; padding-left: 1em; list-style: none;
+  display: grid; gap: 5px;
+}
+.project-detail-body dd li { position: relative; padding-left: .95em; }
+.project-detail-body dd li::before {
+  content: "–"; position: absolute; left: 0; color: var(--muted);
+}
 
 .method-diagram { margin: 0 0 14px; }
 .method-diagram img {
