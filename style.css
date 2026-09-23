@@ -415,15 +415,11 @@ code {
 .hero-summary p { margin: 0; color: var(--text-soft); font-size: 0.79rem; }
 
 .resume-section { padding: 90px 0; border-top: 1px solid var(--surface-mid); }
-.section-heading {
-  display: grid; grid-template-columns: minmax(220px,.9fr) minmax(0,1.1fr);
-  gap: 54px; align-items: end; margin-bottom: 42px;
-}
+.section-heading { margin-bottom: 42px; }
 .section-heading h2 {
   margin: 0; font-size: clamp(2rem,3.7vw,3.25rem);
   line-height: 1.1; letter-spacing: -0.05em;
 }
-.section-heading > p { margin: 0; color: var(--text-soft); font-size: 0.91rem; }
 
 .resume-overview-grid {
   display: grid;
@@ -532,7 +528,12 @@ code {
   content: ""; position: absolute; top: 22px; bottom: 22px; left: 160px;
   width: 2px; background: linear-gradient(var(--primary-soft), var(--surface-mid));
 }
-.timeline-item { display: grid; grid-template-columns: 132px 28px minmax(0,1fr); gap: 14px; }
+.timeline-item {
+  display: grid; grid-template-columns: 132px 28px minmax(0,1fr); gap: 14px;
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.timeline-item.is-visible { opacity: 1; transform: translateY(0); }
 .timeline-period {
   padding-top: 23px; color: var(--muted); font-size: .73rem; font-weight: 700; text-align: right;
 }
@@ -540,7 +541,10 @@ code {
   position: relative; z-index: 1; width: 14px; height: 14px;
   margin: 23px auto 0; border: 4px solid var(--background);
   border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 1px var(--primary-soft);
+  transform: scale(.3);
+  transition: transform .5s cubic-bezier(.2,.8,.3,1.4) .1s;
 }
+.timeline-item.is-visible .timeline-marker { transform: scale(1); }
 .timeline-card {
   padding: 23px 25px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow-soft);
 }
@@ -990,9 +994,6 @@ code {
   .hero { padding-top: 46px; }
   .hero h2 { font-size: clamp(2.45rem,12vw,4rem); }
 
-  .section-heading {
-    grid-template-columns: 1fr; gap: 16px; align-items: start;
-  }
 
   .resume-overview-grid,
   .hero-summary,

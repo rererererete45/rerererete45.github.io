@@ -25,3 +25,27 @@ if (menuButton && mobileMenu) {
 document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
+
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+if (timelineItems.length) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    timelineItems.forEach((item) => item.classList.add("is-visible"));
+  } else {
+    const timelineObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.25, rootMargin: "0px 0px -60px 0px" }
+    );
+
+    timelineItems.forEach((item) => timelineObserver.observe(item));
+  }
+}
