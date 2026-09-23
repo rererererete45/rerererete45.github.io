@@ -351,6 +351,27 @@ code {
 .profile-facts dt { color: var(--muted); font-size: 0.72rem; }
 .profile-facts dd { margin: 0; font-size: 0.78rem; font-weight: 700; }
 
+.copy-field { display: flex; align-items: center; gap: 6px; }
+.copy-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; padding: 0; border: 0; border-radius: 7px;
+  background: transparent; color: var(--muted); cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+.copy-button:hover, .copy-button:focus-visible { background: var(--surface-soft); color: var(--primary); }
+.copy-button-icon { width: 14px; height: 14px; }
+.copy-button-label {
+  position: absolute; margin-top: -34px; margin-left: -6px;
+  padding: 4px 9px; border-radius: 999px;
+  background: var(--text); color: #fff;
+  font-size: .65rem; font-weight: 700; white-space: nowrap;
+  opacity: 0; transform: translateY(4px);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none;
+}
+.copy-button.is-copied .copy-button-label { opacity: 1; transform: translateY(0); }
+.copy-button.is-copied .copy-button-icon { color: var(--primary); }
+
 .profile-links {
   display: grid;
   gap: 7px;
@@ -732,7 +753,6 @@ code {
   min-height: 165px; padding: 22px; border-radius: 18px;
   background: var(--surface); box-shadow: var(--shadow-soft);
 }
-.skill-grid article:last-child { grid-column: 1 / -1; }
 .skill-grid span {
   color: var(--primary); font-size: .66rem; font-weight: 800; letter-spacing: .1em;
 }
@@ -1007,10 +1027,6 @@ code {
   .presentation-card {
     grid-column: auto;
     min-height: 292px;
-  }
-
-  .skill-grid article:last-child {
-    grid-column: auto;
   }
 
   .learning-section { margin-inline: -10px; padding-inline: 10px; }

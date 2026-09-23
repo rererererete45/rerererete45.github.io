@@ -26,6 +26,25 @@ document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
 
+document.querySelectorAll(".copy-button").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const text = button.dataset.copy;
+    if (!text) return;
+
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      return;
+    }
+
+    button.classList.add("is-copied");
+    window.clearTimeout(button._copyTimeout);
+    button._copyTimeout = window.setTimeout(() => {
+      button.classList.remove("is-copied");
+    }, 1600);
+  });
+});
+
 const timelineItems = document.querySelectorAll(".timeline-item");
 
 if (timelineItems.length) {
