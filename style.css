@@ -625,7 +625,7 @@ code {
   border-radius: 14px; border: 1px solid var(--surface-mid);
 }
 .method-diagram figcaption {
-  margin: 8px 0 0; color: var(--muted); font-size: .68rem; font-weight: 700;
+  margin: 0 0 8px; color: var(--muted); font-size: .68rem; font-weight: 700;
 }
 
 .method-diagram-float {
