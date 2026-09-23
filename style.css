@@ -625,6 +625,12 @@ code {
   width: 148px;
   margin: 4px 0 10px 16px;
 }
+
+.method-diagram-pair {
+  display: flex;
+  gap: 10px;
+}
+.method-diagram-pair img { flex: 1 1 0; min-width: 0; }
 .flow-diagram {
   display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
 }
@@ -1027,6 +1033,10 @@ code {
   .method-diagram-float {
     width: 112px;
     margin: 4px 0 8px 12px;
+  }
+
+  .method-diagram-pair {
+    flex-direction: column;
   }
 
   .learning-items a {
