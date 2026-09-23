@@ -486,6 +486,73 @@
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
+                  <span>2025 · 유성구청 인턴 · Facility Planning</span>
+                </div>
+                <h3>장대행복주택 국공립어린이집 수요 분석</h3>
+                <p class="project-en">Childcare Facility Demand Analysis for a New Public Housing Complex</p>
+                <p>
+                  신축 공공주택에 국공립 어린이집이 꼭 필요한지, 입주 전후 시나리오로 나눠 비교했습니다.
+                </p>
+                <div class="tag-list">
+                  <span>시설확충최적화지수</span><span>가중치</span><span>GIS</span><span>정책분석</span>
+                </div>
+
+                <details class="project-detail">
+                  <summary>방법·결과 자세히 보기</summary>
+
+                  <figure class="method-diagram">
+                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 데이터 수집 → 데이터 전처리 → 데이터 통합·현황분석 → 장래 수요 추정">
+                      <span class="flow-step">데이터 수집</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">데이터 전처리</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">데이터 통합·현황분석</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">장래 수요 추정</span>
+                    </div>
+                    <figcaption>분석 프로세스</figcaption>
+                  </figure>
+
+                  <dl class="project-detail-body">
+                    <div>
+                      <dt>배경</dt>
+                      <dd>500세대 이상 공동주택에는 어린이집을 국공립으로 운영해야 하는데, 국공립을 찾는 수요는 계속 느는 반면 공급은 그만큼 못 따라가고 있습니다. 장대행복주택도 곧 입주를 앞두고 있어서, 실제로 설치가 필요한지 따져볼 근거가 필요했습니다.</dd>
+                    </div>
+                    <div>
+                      <dt>데이터</dt>
+                      <dd>지자체 제공 아동일람표·어린이집현황·어린이집일람표, 공공데이터포털 집계구별 인구·주민등록 인구 통계</dd>
+                    </div>
+                    <div>
+                      <dt>방법</dt>
+                      <dd>
+                        행정안전부의 보육 서비스 빅데이터 분석모델(2018)을 적용해 영유아·가임기 여성 인구 점수와 접근성 점수를 계산하고, 이 둘을 합쳐 시설확충최적화지수를 만들었습니다. 지수를 백분위로 나눠 6등급으로 구분하고, 입주 전과 입주 후 두 시나리오로 비교했습니다.
+                        <div class="formula-box">
+                          <p class="formula">시설확충최적화지수 = 인구현황점수 × 0.6 + 접근성점수 × 0.4</p>
+                          <p class="formula-note">인구현황점수 = 영유아 점수 + 가임기 여성 점수 · 접근성점수 = 이용자 접근성 점수<br>「보육 서비스 강화를 위한 빅데이터 분석」, 행정안전부, 2018</p>
+                        </div>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd>입주 전에는 설치가 시급한 편은 아니었는데, 입주 예정 인구를 반영하니 영유아·가임기 여성 점수가 크게 올라가면서 지수와 등급도 함께 뛰었습니다. 이 결과를 바탕으로, 입주 시점에 맞춰 국공립 어린이집 확충을 미리 검토해두는 편이 낫겠다고 제안했습니다.</dd>
+                    </div>
+                    <div>
+                      <dt>한계와 다음 단계</dt>
+                      <dd>인구 추정을 유성구 평균 세대원수·비율에 기대다 보니, 실제 입주 시점의 인구 구성과는 차이가 날 수 있습니다. 입주자 모집공고 같은 실제 데이터가 나오면 모델을 다시 검증해보고 싶습니다.</dd>
+                    </div>
+                  </dl>
+                </details>
+              </div>
+              <div class="project-preview preview-document" aria-hidden="true">
+                <i>[영유아]</i><i>[접근성]</i><i>[지수]</i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">04</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-green">PUBLIC</span>
                   <span>2024–2025 · 학생연구자 · Network Analysis</span>
                 </div>
                 <h3>도시 간 관계 네트워크 구축 및 중심성 분석</h3>
@@ -545,7 +612,7 @@
               확인되면 아래 <article> 블록의 주석만 해제하세요.
 
             <article class="project-card">
-              <div class="project-index">04</div>
+              <div class="project-index">05</div>
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
