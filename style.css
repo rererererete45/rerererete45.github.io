@@ -444,7 +444,7 @@ code {
 
 .resume-overview-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1.16fr) minmax(220px, .76fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: 14px;
   align-items: stretch;
 }
@@ -460,8 +460,7 @@ code {
 
 .education-card,
 .key-cert-card,
-.language-card,
-.presentation-card {
+.language-card {
   display: flex;
   flex-direction: column;
 }
@@ -472,8 +471,7 @@ code {
 .card-topline span { color: var(--primary); }
 .education-card h3,
 .key-cert-card h3,
-.language-card h3,
-.presentation-card h3 {
+.language-card h3 {
   margin: 34px 0 7px;
   font-size: 1.25rem;
 }
@@ -532,14 +530,6 @@ code {
 .language-card .language-score {
   margin-top: auto;
 }
-
-.presentation-card { justify-content: flex-start; }
-.presentation-card .accent-text { margin: 0 0 12px; font-size: .84rem; }
-.presentation-card .presentation-authors {
-  margin: auto 0 0; padding-top: 14px; border-top: 1px solid var(--surface-mid);
-  color: var(--text-soft); font-size: .76rem;
-}
-.presentation-card .presentation-authors strong { color: var(--text); }
 
 .section-note { margin: 16px 0 0; color: var(--muted); font-size: .72rem; }
 .section-note a { color: var(--primary); font-weight: 800; }
@@ -974,8 +964,7 @@ code {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .language-card,
-  .presentation-card {
+  .language-card {
     grid-column: 1 / -1;
     min-height: 230px;
   }
@@ -1023,8 +1012,7 @@ code {
     grid-template-columns: 1fr;
   }
 
-  .language-card,
-  .presentation-card {
+  .language-card {
     grid-column: auto;
     min-height: 292px;
   }
@@ -1081,29 +1069,13 @@ code {
     grid-template-columns: 210px 1fr; gap: 28px;
   }
   .profile-column { position: static; }
-  .profile-card, .hero-summary article, .education-card, .key-cert-card, .language-card, .presentation-card, .timeline-card,
+  .profile-card, .hero-summary article, .education-card, .key-cert-card, .language-card, .timeline-card,
   .project-card, .skill-grid article, .learning-group, .credential-summary article {
     box-shadow: none; border: 1px solid #d8dae4;
   }
   .hero, .resume-section { padding: 26px 0; }
   .project-card { grid-template-columns: 28px 1fr; }
   .learning-groups { grid-template-columns: 1fr; }
-}
-
-
-.hero-keywords {
-  margin: 0 0 20px;
-  color: var(--primary);
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-}
-
-@media (max-width: 780px) {
-  .hero-keywords {
-    font-size: 0.8rem;
-    margin-bottom: 16px;
-  }
 }
 
 
