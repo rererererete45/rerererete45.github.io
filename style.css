@@ -1096,6 +1096,7 @@ code {
   #skills { order: 3; }
   #projects { order: 4; }
   #credentials { order: 5; }
+  #credentials { break-before: page; }
   .profile-column { position: static; }
 
   /* 머리글(이름) */

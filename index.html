@@ -658,7 +658,7 @@
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
-                  <span>2025– · 한국종합경제연구원 · Feasibility Study</span>
+                  <span>2026 · 한국종합경제연구원 · Feasibility Study</span>
                 </div>
                 <h3>철도 인프라 경제성·투자효과 분석</h3>
                 <p class="project-en">Economic Feasibility Analysis of Rail Infrastructure</p>
@@ -742,6 +742,104 @@
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
+                  <span>학부 4학년 · 개인 연구 · Regional Decline</span>
+                </div>
+                <h3>지방소멸 영향 요인 분석: 다중회귀와 머신러닝 비교</h3>
+                <p class="project-en">Factors Affecting Regional Extinction: Regression vs. Machine Learning</p>
+                <p>
+                  전국 229개 시군구의 2022년 자료로 소멸위험지수에 영향을 주는 요인을
+                  다중회귀·단계적 회귀·머신러닝으로 비교 분석했습니다.
+                </p>
+                <div class="tag-list">
+                  <span>다중회귀분석</span><span>단계적 회귀</span><span>머신러닝</span><span>앙상블</span>
+                </div>
+
+                <details class="project-detail">
+                  <summary>방법·결과 자세히 보기</summary>
+
+                  <figure class="method-diagram">
+                    <figcaption>분석 프로세스</figcaption>
+                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 문헌 고찰·변수 선정 → 데이터 구축·전처리 → 회귀분석·머신러닝 모델 구축 → 모델 평가·비교">
+                      <span class="flow-step">문헌 고찰·변수 선정</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">데이터 구축·전처리</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">회귀·머신러닝 모델 구축</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">모델 평가·비교</span>
+                    </div>
+                  </figure>
+
+                  <dl class="project-detail-body">
+                    <div>
+                      <dt>배경</dt>
+                      <dd>
+                        <ul>
+                          <li>인구감소·저출산·고령화와 수도권 집중으로 지방소멸 위험 증가 (2022년 합계출산율 약 0.78명)</li>
+                          <li>기존 연구의 주거·고용 변수에 교육 인프라와 외국인 인구 변수를 더해 분석 범위 확장</li>
+                          <li>변수가 많을 때 생기는 다중공선성을 머신러닝으로 보완, 전통적 회귀분석과 결과 비교</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>데이터</dt>
+                      <dd>
+                        <ul>
+                          <li>전국 시군구 229개, 2022년 자료</li>
+                          <li>KDI 경제정보센터 지역발전지수(2022)를 참고해 독립변수 37개 구축 (주거·인구, 경제활동·고용, 의료·안전서비스, 인프라·환경, 사회·여가서비스, 교육·학습환경)</li>
+                        </ul>
+                        <div class="formula-box">
+                          <p class="formula">소멸위험지수 = 20~39세 여성인구 / 65세 이상 인구</p>
+                          <p class="formula-note">종속변수 · 일본 마스다 보고서에서 처음 제안된 지표</p>
+                        </div>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>방법</dt>
+                      <dd>
+                        <ul>
+                          <li>결측치(평균값 대체)·이상치 처리, 데이터 스케일링</li>
+                          <li>다중회귀분석: 상관분석과 다중공선성(VIF) 검증으로 37개 변수를 8개로 축소 (R² 0.849)</li>
+                          <li>단계적 회귀분석: 전진선택법과 후진제거법을 결합해 12단계로 변수 선택 (R² 0.909)</li>
+                          <li>머신러닝: GBC·Random Forest·XGBoost를 RandomizedSearchCV로 최적화, Stratified K-Fold로 검증</li>
+                          <li>Hard·Soft Voting 앙상블을 비교해 Soft Voting을 최종 모델로 선정 (F1 weighted 0.892)</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd>
+                        <ul>
+                          <li>세 방법 모두에서 주거·인구, 경제활동·고용, 교육·학습환경 변수가 유의한 영향</li>
+                          <li>빈집 비율·노후주택 비율이 높을수록 소멸 위험 증가, 유치원 취원율·경제활동참가율이 높을수록 소멸 위험 감소</li>
+                          <li>독거노인가구 비율이 높을수록 소멸 위험 증가 (단계적 회귀)</li>
+                          <li>머신러닝 변수 중요도: 1인가구 비율, 유치원 취원율, 1인당 녹지면적 순</li>
+                          <li>시사점: 주거환경 관리, 교육 인프라 확충, 고용 기회 확대, 노인 사회적 고립 해소, 지역 맞춤형 전략</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>한계와 다음 단계</dt>
+                      <dd>
+                        <ul>
+                          <li>2022년 한 시점의 자료로 시간에 따른 변화는 반영하지 못함</li>
+                          <li>시계열 자료로 확장해 변화 요인을 분석하고 싶음</li>
+                        </ul>
+                      </dd>
+                    </div>
+                  </dl>
+                </details>
+              </div>
+              <div class="project-preview preview-chart" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">07</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-green">PUBLIC</span>
                   <span>2024–2025 · 학부연구생 · Network Analysis</span>
                 </div>
                 <h3>도시 간 관계 네트워크 구축 및 중심성 분석</h3>
@@ -821,7 +919,7 @@
             </article>
 
             <article class="project-card">
-              <div class="project-index">07</div>
+              <div class="project-index">08</div>
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
@@ -932,8 +1030,8 @@
           <div class="skill-grid">
             <article><span>DATA</span><h3>Python · SQL · Excel · SPSS</h3><p>데이터 수집·정제, 쿼리 작성, 집계, 결과표 구성</p></article>
             <article><span>GIS</span><h3>QGIS · PyQGIS · Web GIS</h3><p>지오코딩, 버퍼·공간결합, 좌표계 변환, 밀집도 지도화</p></article>
-            <article><span>STATISTICS</span><h3>기술통계 · 상관분석</h3><p>피어슨·스피어만·켄들 상관분석, 위험지수 임계값 산정</p></article>
-            <article><span>PREDICTION</span><h3>수요예측 모델링</h3><p>코호트 요인법, Prophet 시계열, 랜덤포레스트 회귀 적용</p></article>
+            <article><span>STATISTICS</span><h3>기술통계 · 상관·회귀분석</h3><p>피어슨·스피어만·켄들 상관분석, 다중·단계적 회귀분석, 위험지수 임계값 산정</p></article>
+            <article><span>PREDICTION</span><h3>수요예측 · 머신러닝</h3><p>코호트 요인법, Prophet, 랜덤포레스트·XGBoost, 앙상블 적용</p></article>
             <article><span>FEASIBILITY</span><h3>경제성·투자효과 분석</h3><p>NPV·B/C·LCC 대안 비교, 할인율 민감도 분석</p></article>
             <article><span>CAD</span><h3>AutoCAD</h3><p>Autodesk Certified User 취득, 기초 도면 작성</p></article>
             <article><span>GRAPHIC</span><h3>Photoshop · GTQ 1급</h3><p>그래픽기술자격 1급 취득, 이미지 편집</p></article>
