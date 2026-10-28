@@ -1052,24 +1052,80 @@ code {
   }
 }
 
+@page { size: A4; margin: 12mm; }
+
 @media print {
-  body { background: #fff; color: #000; font-size: 11px; }
-  .topbar, .availability, .profile-actions, .footer, .project-preview, .privacy-note, .profile-card-glow {
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #fff; color: #111; font-size: 10.5px; line-height: 1.5; }
+
+  .skip-link, .topbar, .availability, .profile-actions, .profile-links, .footer,
+  .project-preview, .privacy-note, .profile-card-glow, .profile-card-shine,
+  .profile-card-grain, .profile-monogram, .profile-userbar, .copy-button,
+  .menu-button, .mobile-menu, .project-detail summary {
     display: none !important;
   }
-  .project-detail summary { display: none; }
-  .project-detail-body { display: grid !important; }
-  .page-layout {
-    width: 100%; padding: 0;
-    grid-template-columns: 210px 1fr; gap: 28px;
-  }
+
+  .page-layout { display: block !important; width: 100%; max-width: none; margin: 0; padding: 0; }
   .profile-column { position: static; }
+  .profile-card-shell, .profile-card, .profile-card-inner {
+    transform: none !important; box-shadow: none; background: none; border: 0; border-radius: 0; padding: 0;
+  }
+  .profile-copy h1 { font-size: 24px; margin: 0; }
+  .profile-summary { margin: 6px 0 0; }
+  .profile-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; margin: 8px 0 0; }
+  .profile-facts div { grid-template-columns: 56px 1fr; gap: 8px; padding: 3px 0; }
+  .profile-facts dd { word-break: keep-all; }
+  .profile-card-shell { max-width: none; margin: 0; }
+
+  .hero { padding: 14px 0 10px; }
+  .hero h2 { font-size: 22px; margin: 0 0 8px; }
+  .hero-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+  .hero-summary article { min-height: 0; padding: 10px; }
+  .hero-summary strong { margin: 8px 0 3px; }
+
+  .resume-section { padding: 14px 0; border-top: 1px solid #d8dae4; }
+  .section-heading { margin-bottom: 10px; break-after: avoid; break-inside: avoid; }
+  .subsection-title, .side-project-heading { break-after: avoid; }
+  .timeline-item:first-child, .credential-table > div:first-child { break-before: avoid; }
+  .section-heading h2 { font-size: 18px; }
+
   .profile-card, .hero-summary article, .education-card, .key-cert-card, .language-card, .timeline-card,
   .project-card, .skill-grid article, .learning-group, .credential-summary article {
     box-shadow: none; border: 1px solid #d8dae4;
   }
-  .hero, .resume-section { padding: 26px 0; }
-  .project-card { grid-template-columns: 28px 1fr; }
+
+  .resume-overview-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .overview-card { min-height: 0; padding: 12px; }
+  .education-card h3, .key-cert-card h3 { margin: 10px 0 4px; }
+  .education-card dl { margin-top: 10px; }
+
+  .timeline { gap: 8px; }
+  .timeline::before { left: 109px; top: 10px; bottom: 10px; }
+  .timeline-item {
+    opacity: 1 !important; transform: none !important; transition: none;
+    grid-template-columns: 90px 20px minmax(0, 1fr); gap: 10px; break-inside: avoid;
+  }
+  .timeline-period { grid-column: 1; grid-row: auto; padding-top: 13px; text-align: right; }
+  .timeline-marker { grid-column: 2; grid-row: auto; width: 14px; height: 14px; margin: 13px auto 0; transform: none !important; transition: none; }
+  .timeline-card { grid-column: 3; padding: 10px 12px; }
+
+  .project-list { gap: 10px; }
+  .project-card { grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 12px; transform: none; }
+  .project-detail { margin-top: 10px; padding-top: 8px; }
+  .project-detail-body { gap: 8px; margin-top: 8px; }
+  .project-detail-body > div, .method-diagram, .formula-box, .flow-diagram { break-inside: avoid; }
+  .method-diagram { margin-bottom: 8px; }
+  .method-diagram > img { max-width: 64%; }
+  .method-diagram-pair { flex-direction: row; }
+  .method-diagram-pair img { max-width: 100%; }
+  .method-diagram-float { width: 110px; }
+
+  .skill-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .skill-grid article { min-height: 0; padding: 10px; break-inside: avoid; }
+  .skill-grid h3 { margin: 8px 0 3px; font-size: 12px; }
+
+  .credential-table > div { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 80px; padding: 5px 0; gap: 10px; }
+  .education-list article { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 130px; padding: 6px 0; gap: 10px; }
   .learning-groups { grid-template-columns: 1fr; }
 }
 

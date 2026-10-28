@@ -26,6 +26,16 @@ document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
 
+let openedForPrint = [];
+window.addEventListener("beforeprint", () => {
+  openedForPrint = [...document.querySelectorAll("details:not([open])")];
+  openedForPrint.forEach((d) => { d.open = true; });
+});
+window.addEventListener("afterprint", () => {
+  openedForPrint.forEach((d) => { d.open = false; });
+  openedForPrint = [];
+});
+
 document.querySelectorAll(".copy-button").forEach((button) => {
   button.addEventListener("click", async () => {
     const text = button.dataset.copy;
