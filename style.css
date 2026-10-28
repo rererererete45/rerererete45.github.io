@@ -1066,6 +1066,13 @@ code {
   }
 
   .page-layout { display: block !important; width: 100%; max-width: none; margin: 0; padding: 0; }
+  .content-column { display: flex !important; flex-direction: column; }
+  .hero { order: 0; }
+  #education { order: 1; }
+  #experience { order: 2; }
+  #skills { order: 3; }
+  #projects { order: 4; }
+  #credentials { order: 5; }
   .profile-column { position: static; }
   .profile-card-shell, .profile-card, .profile-card-inner {
     transform: none !important; box-shadow: none; background: none; border: 0; border-radius: 0; padding: 0;
@@ -1099,7 +1106,9 @@ code {
   .education-card h3, .key-cert-card h3 { margin: 10px 0 4px; }
   .education-card dl { margin-top: 10px; }
 
-  .timeline { gap: 8px; }
+  .side-project-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .side-project-card { padding: 10px 12px; break-inside: avoid; }
+  .timeline { gap: 6px; }
   .timeline::before { left: 109px; top: 10px; bottom: 10px; }
   .timeline-item {
     opacity: 1 !important; transform: none !important; transition: none;
@@ -1107,25 +1116,49 @@ code {
   }
   .timeline-period { grid-column: 1; grid-row: auto; padding-top: 13px; text-align: right; }
   .timeline-marker { grid-column: 2; grid-row: auto; width: 14px; height: 14px; margin: 13px auto 0; transform: none !important; transition: none; }
-  .timeline-card { grid-column: 3; padding: 10px 12px; }
+  .timeline-card { grid-column: 3; padding: 8px 12px; }
+  .timeline-card h3 { margin: 4px 0 2px; font-size: 13px; }
+  .timeline-card p { margin: 2px 0 0; }
+  .timeline-period { padding-top: 11px; }
+  .timeline-marker { margin-top: 11px; }
 
   .project-list { gap: 10px; }
-  .project-card { grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 12px; transform: none; }
-  .project-detail { margin-top: 10px; padding-top: 8px; }
-  .project-detail-body { gap: 8px; margin-top: 8px; }
+  .project-list { gap: 0; }
+  .project-card, .project-card.project-featured {
+    grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 12px 0 10px; transform: none;
+    border: 0; border-top: 1px solid #d8dae4; border-radius: 0; background: none; box-shadow: none;
+    break-inside: auto;
+  }
+  .project-card:first-child { border-top: 0; }
+  .project-meta, .project-copy h3, .project-en, .tag-list, .project-copy > p { break-after: avoid; }
+  .project-copy > p { break-inside: avoid; }
+  .project-detail-body dd { break-inside: avoid; }
+  .project-copy h3 { font-size: 15px; }
+  .project-detail { margin-top: 8px; padding-top: 6px; }
+  .project-detail-body { gap: 6px; margin-top: 6px; }
   .project-detail-body > div, .method-diagram, .formula-box, .flow-diagram { break-inside: avoid; }
-  .method-diagram { margin-bottom: 8px; }
-  .method-diagram > img { max-width: 64%; }
-  .method-diagram-pair { flex-direction: row; }
+  .project-detail-body dd { font-size: 11px; line-height: 1.45; margin-top: 2px; }
+  .project-detail-body dd ul { gap: 2px; }
+  .project-detail-body dt { font-size: 9px; }
+  .formula-box { padding: 8px 12px; margin-top: 6px; }
+  .formula { font-size: 12px; }
+  .method-diagram { margin-bottom: 6px; }
+  .method-diagram > img { max-width: 44%; }
+  .method-diagram-pair { flex-direction: row; max-width: 82%; }
   .method-diagram-pair img { max-width: 100%; }
-  .method-diagram-float { width: 110px; }
+  .method-diagram-float { width: 96px; margin: 2px 0 6px 12px; }
+  .flow-step { padding: 5px 9px; font-size: 10.5px; }
 
-  .skill-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
-  .skill-grid article { min-height: 0; padding: 10px; break-inside: avoid; }
-  .skill-grid h3 { margin: 8px 0 3px; font-size: 12px; }
+  .skill-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; break-inside: avoid; }
+  .skill-grid article { min-height: 0; padding: 7px 9px; break-inside: avoid; }
+  .skill-grid h3 { margin: 4px 0 2px; font-size: 11.5px; }
+  .skill-grid p { font-size: 10px; line-height: 1.35; }
+  .section-note { margin-top: 8px; }
 
-  .credential-table > div { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 80px; padding: 5px 0; gap: 10px; }
-  .education-list article { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 130px; padding: 6px 0; gap: 10px; }
+  .credential-table > div { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 80px; padding: 3px 0; gap: 10px; }
+  .education-list article { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 130px; padding: 4px 0; gap: 10px; break-inside: avoid; }
+  .subsection + .subsection { margin-top: 10px; }
+  .subsection-title { margin-bottom: 6px; }
   .learning-groups { grid-template-columns: 1fr; }
 }
 

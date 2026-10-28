@@ -22,10 +22,6 @@ if (menuButton && mobileMenu) {
   });
 }
 
-document.querySelectorAll("[data-print]").forEach((button) => {
-  button.addEventListener("click", () => window.print());
-});
-
 let openedForPrint = [];
 window.addEventListener("beforeprint", () => {
   openedForPrint = [...document.querySelectorAll("details:not([open])")];
