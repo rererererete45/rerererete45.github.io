@@ -1092,11 +1092,12 @@ code {
   .content-column { display: flex !important; flex-direction: column; }
   .hero { order: 0; }
   #education { order: 1; }
-  #experience { order: 2; }
-  #skills { order: 3; }
+  #skills { order: 2; }
+  #experience { order: 3; }
   #projects { order: 4; }
-  #credentials { order: 5; }
-  #credentials { break-before: page; }
+  #credentials { order: 5; break-inside: avoid; padding-top: 8px; }
+  #experience { break-before: page; }
+  .project-card:nth-child(2), .project-card:nth-child(3), .project-card:nth-child(6), .project-card:nth-child(8) { break-before: page; }
   .profile-column { position: static; }
 
   /* 머리글(이름) */
@@ -1123,8 +1124,8 @@ code {
   .hero-summary p { font-size: 10.5px; }
 
   /* 섹션 제목 */
-  .resume-section { padding: 16px 0 6px; border-top: 0; }
-  .section-heading { margin-bottom: 10px; break-after: avoid; break-inside: avoid; }
+  .resume-section { padding: 14px 0 4px; border-top: 0; }
+  .section-heading { margin-bottom: 8px; break-after: avoid; break-inside: avoid; }
   .section-heading h2 { font-size: 15px; margin: 0; padding: 0 0 5px; border-bottom: 1.5px solid var(--ink); letter-spacing: -0.01em; }
   .subsection-title, .side-project-heading { break-after: avoid; }
   .subsection-title h3 { font-size: 12px; }
@@ -1171,7 +1172,7 @@ code {
   /* 프로젝트 */
   .project-list { gap: 0; }
   .project-card, .project-card.project-featured {
-    display: block; position: relative; padding: 14px 0 12px 0; transform: none;
+    display: block; position: relative; padding: 12px 0 10px 0; transform: none;
     border: 0; border-top: 1px solid var(--rule); border-radius: 0; background: none; box-shadow: none;
     break-inside: auto;
   }
@@ -1188,11 +1189,11 @@ code {
   .tag-list span { display: inline; padding: 0; background: none; border: 0; border-radius: 0; color: var(--accent); font-size: 10.5px; font-weight: 600; }
   .tag-list span + span::before { content: " · "; color: var(--muted); font-weight: 400; }
 
-  .project-detail { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--surface-mid); }
+  .project-detail { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--surface-mid); }
   .project-detail-body { gap: 0; margin-top: 4px; }
   .project-detail-body > div {
     display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 10px;
-    padding: 5px 0; border-top: 1px solid var(--surface-mid); break-inside: avoid;
+    padding: 4px 0; border-top: 1px solid var(--surface-mid); break-inside: avoid;
   }
   .project-detail-body > div:first-child { border-top: 0; }
   .project-detail-body dt { margin: 1px 0 0; font-size: 10.5px; font-weight: 800; color: var(--accent); text-transform: none; letter-spacing: 0; }
@@ -1203,33 +1204,33 @@ code {
 
   .method-diagram { margin: 0 0 6px; break-inside: avoid; }
   .method-diagram figcaption { margin: 0 0 4px; font-size: 10px; font-weight: 700; color: var(--muted); }
-  .method-diagram > img { max-width: 62%; border: 1px solid var(--rule); border-radius: 0; }
-  .method-diagram-pair { flex-direction: row; max-width: 90%; gap: 8px; }
+  .method-diagram > img { max-width: 50%; border: 1px solid var(--rule); border-radius: 0; }
+  .method-diagram-pair { flex-direction: row; max-width: 80%; gap: 8px; }
   .method-diagram-pair img { max-width: 100%; border: 1px solid var(--rule); border-radius: 0; }
   .method-diagram-float { width: 92px; margin: 2px 0 4px 12px; }
   .flow-diagram { gap: 5px; break-inside: avoid; }
   .flow-step { padding: 4px 8px; background: #fff; border: 1px solid var(--rule); border-radius: 0; color: var(--ink); font-size: 10.5px; font-weight: 600; }
   .flow-arrow { color: var(--muted); font-size: 11px; }
-  .formula-box { margin-top: 6px; padding: 7px 11px; background: var(--fill); border: 0; border-left: 3px solid var(--accent); border-radius: 0; break-inside: avoid; text-align: left; }
+  .formula-box { margin-top: 5px; padding: 5px 11px; background: var(--fill); border: 0; border-left: 3px solid var(--accent); border-radius: 0; break-inside: avoid; text-align: left; }
   .formula { margin: 0; font-size: 12px; font-weight: 700; color: var(--ink); text-align: left; }
   .formula-note { margin: 2px 0 0; font-size: 9.5px; color: var(--muted); text-align: left; }
 
   .side-project-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-  .side-project-card { padding: 9px 11px; background: var(--fill); border: 0; border-radius: 0; break-inside: avoid; }
+  .side-project-card { padding: 7px 10px; background: var(--fill); border: 0; border-radius: 0; break-inside: avoid; }
   .side-project-card h4 { font-size: 11.5px; }
   .side-project-card p { font-size: 10px; margin-bottom: 4px; }
   .side-project-card a { font-size: 10px; color: var(--accent); }
-  .side-project-heading { margin: 16px 0 8px; font-size: 11px; font-weight: 700; color: var(--ink); }
+  .side-project-heading { margin: 12px 0 6px; font-size: 11px; font-weight: 700; color: var(--ink); }
 
   /* 자격·교육 */
-  .subsection + .subsection { margin-top: 12px; }
-  .subsection-title { margin-bottom: 4px; }
-  .credential-table > div { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 80px; padding: 3.5px 0; gap: 10px; border-bottom: 1px solid var(--surface-mid); }
-  .credential-table strong { font-size: 11px; }
-  .credential-table span, .credential-table time { font-size: 10.5px; }
-  .education-list article { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 130px; padding: 4px 0; gap: 10px; break-inside: avoid; border-bottom: 1px solid var(--surface-mid); }
-  .education-list h4 { font-size: 11px; }
-  .education-list p { font-size: 10px; }
+  .subsection + .subsection { margin-top: 8px; }
+  .subsection-title { margin-bottom: 2px; }
+  .credential-table > div { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 80px; padding: 1px 0; gap: 10px; border-bottom: 1px solid var(--surface-mid); }
+  .credential-table strong { font-size: 10.5px; }
+  .credential-table span, .credential-table time { font-size: 10px; }
+  .education-list article { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 130px; padding: 2px 0; gap: 10px; break-inside: avoid; border-bottom: 1px solid var(--surface-mid); }
+  .education-list h4 { font-size: 10.5px; }
+  .education-list p { font-size: 9.5px; margin: 0; line-height: 1.3; }
   .education-list > article > span, .education-list time { font-size: 10.5px; }
 }
 
