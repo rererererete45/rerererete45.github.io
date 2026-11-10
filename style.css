@@ -469,7 +469,8 @@ mark.todo {
 .copy-button-wide.is-copied .copy-button-icon { color: inherit; }
 
 /* ── 연구 관심 ─────────────────────────────────── */
-.interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.hero-tagline { margin: 14px 0 0; color: var(--primary); font-size: .95rem; font-weight: 700; }
+.interest-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .interest-card {
   position: relative; display: flex; flex-direction: column; min-height: 230px; padding: 24px 22px 22px;
   border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-soft);
