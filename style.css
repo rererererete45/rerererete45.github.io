@@ -410,8 +410,8 @@ code {
 
 .hero h2 {
   max-width: 860px; margin: 0;
-  font-size: clamp(2.8rem, 5.4vw, 5.15rem);
-  line-height: 1.08; letter-spacing: -0.06em;
+  font-size: clamp(2.3rem, 4.4vw, 4rem);
+  line-height: 1.12; letter-spacing: -0.05em;
 }
 .hero-lead {
   max-width: 820px; margin: 28px 0 0;
@@ -429,6 +429,120 @@ code {
 .hero-summary span { color: #9b9aab; font-size: 0.67rem; font-weight: 800; }
 .hero-summary strong { display: block; margin: 34px 0 7px; font-size: 1rem; }
 .hero-summary p { margin: 0; color: var(--text-soft); font-size: 0.79rem; }
+
+/* ── KO / EN 전환 ───────────────────────────────── */
+html[data-lang="en"] .ko { display: none !important; }
+html:not([data-lang="en"]) .en { display: none !important; }
+
+.lang-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 44px; min-height: 40px; padding: 0 12px;
+  border: 1px solid var(--outline); border-radius: 999px;
+  background: var(--surface); color: var(--text-soft);
+  font-size: .74rem; font-weight: 800; letter-spacing: .06em; cursor: pointer;
+  transition: .2s ease;
+}
+.lang-toggle:hover, .lang-toggle:focus-visible { border-color: var(--primary); color: var(--primary); }
+.lang-toggle[aria-pressed="true"] { background: var(--primary-soft); color: var(--primary-dark); border-color: transparent; }
+
+/* ── TODO 마커 (병합 전 제거) ─────────────────────── */
+mark.todo {
+  display: inline-block; padding: 1px 7px; border-radius: 6px;
+  background: #fff3bf; color: #7a5a00; font-size: .78em; font-weight: 700;
+}
+
+/* ── 첫 화면 버튼 ──────────────────────────────── */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.hero-note { margin: 12px 0 0; font-size: .74rem; color: var(--muted); }
+
+.copy-button-wide {
+  position: relative; width: auto; height: auto; min-height: 40px;
+  gap: 8px; padding: 9px 14px; border-radius: 999px; font-size: .76rem; font-weight: 800;
+}
+.copy-button-wide.button-ghost { border: 1px solid var(--outline); background: var(--surface); color: var(--text-soft); }
+.copy-button-wide.button-ghost:hover, .copy-button-wide.button-ghost:focus-visible { background: var(--surface); border-color: var(--primary); color: var(--primary); }
+.copy-button-wide.button-primary { background: var(--primary); color: #fff; }
+.copy-button-wide.button-primary:hover, .copy-button-wide.button-primary:focus-visible { background: var(--primary-dark); color: #fff; }
+.copy-button-wide .copy-button-icon { width: 15px; height: 15px; }
+.copy-button-wide .copy-button-label { top: -32px; left: 50%; margin: 0; transform: translate(-50%, 4px); }
+.copy-button-wide.is-copied .copy-button-label { transform: translate(-50%, 0); }
+.copy-button-wide.is-copied .copy-button-icon { color: inherit; }
+
+/* ── 연구 관심 ─────────────────────────────────── */
+.interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.interest-card {
+  position: relative; display: flex; flex-direction: column; min-height: 230px; padding: 24px 22px 22px;
+  border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-soft);
+  border-top: 4px solid var(--primary);
+}
+.interest-index { color: var(--primary); font-size: .7rem; font-weight: 800; letter-spacing: .12em; }
+.interest-card h3 { margin: 22px 0 4px; font-size: 1.12rem; line-height: 1.35; letter-spacing: -.02em; }
+.interest-sub { margin: 0 0 12px; color: var(--primary); font-size: .76rem; font-weight: 700; }
+.interest-card > p:last-child { margin: 0; color: var(--text-soft); font-size: .84rem; line-height: 1.65; }
+
+/* ── 진행 중인 연구 ────────────────────────────── */
+.ongoing-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: start; }
+.ongoing-card {
+  padding: 24px; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-soft);
+  border: 1px dashed rgba(168, 105, 19, .35);
+}
+.ongoing-card h3 { margin: 16px 0 8px; font-size: 1.18rem; line-height: 1.35; letter-spacing: -.02em; }
+.ongoing-question {
+  margin: 0 0 14px; padding: 12px 14px; border-radius: 12px;
+  background: var(--surface-soft); color: var(--text); font-size: .88rem; font-weight: 700; line-height: 1.55;
+}
+.ongoing-question::before { content: "Q. "; color: var(--primary); }
+.ongoing-body { margin-top: 0; }
+.ongoing-body dd.pending { color: var(--muted); font-style: italic; }
+.ongoing-links { margin-top: 16px; }
+.button.is-disabled { opacity: .55; cursor: not-allowed; pointer-events: none; }
+
+/* ── 프로젝트 묶음(도시계획 실무) ───────────────── */
+.project-group { margin-top: 28px; border-radius: 20px; background: var(--surface-soft); }
+.project-group > summary {
+  list-style: none; cursor: pointer; display: grid; gap: 4px; padding: 18px 22px;
+}
+.project-group > summary::-webkit-details-marker { display: none; }
+.project-group-title { font-size: .98rem; font-weight: 800; }
+.project-group-title::before { content: "+ "; color: var(--primary); }
+.project-group[open] .project-group-title::before { content: "− "; }
+.project-group-sub { color: var(--muted); font-size: .76rem; }
+.project-list-nested { padding: 0 14px 14px; }
+
+.side-project-card .tag-list { margin-top: 10px; }
+.side-note { margin: 10px 0 0 !important; font-size: .72rem !important; }
+
+/* ── 학력·발표 ─────────────────────────────────── */
+.presentation-card { display: flex; flex-direction: column; }
+.presentation-card h3 { margin: 34px 0 10px; font-size: 1.25rem; }
+.citation { margin: 0; color: var(--text-soft); font-size: .86rem; line-height: 1.7; }
+.citation em { font-style: normal; color: var(--text); font-weight: 700; }
+.citation-note { margin: 12px 0 0; font-size: .74rem; }
+
+.skill-etc { background: var(--surface-soft); box-shadow: none; }
+.skill-etc span { color: var(--muted); }
+
+/* ── 기타 자격 접힘 ────────────────────────────── */
+.credential-extra { margin-top: 36px; border-top: 1px solid var(--surface-mid); padding-top: 14px; }
+.credential-extra > summary {
+  list-style: none; cursor: pointer; color: var(--primary); font-size: .8rem; font-weight: 800; padding: 6px 0;
+}
+.credential-extra > summary::-webkit-details-marker { display: none; }
+.credential-extra > summary::before { content: "+ "; }
+.credential-extra[open] > summary::before { content: "− "; }
+.credential-extra .credential-table { margin-top: 8px; }
+.credential-extra .education-list { margin-top: 18px; border-top: 1px solid var(--surface-mid); }
+
+/* ── 연락 ──────────────────────────────────────── */
+.contact-card {
+  padding: 28px; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-soft);
+}
+.contact-card > p { margin: 0 0 18px; color: var(--text-soft); font-size: .92rem; }
+.contact-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.contact-email { font-size: 1.25rem; font-weight: 800; letter-spacing: -.02em; color: var(--text); }
+.contact-email:hover, .contact-email:focus-visible { color: var(--primary); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--surface-mid); }
+.contact-links a { color: var(--primary); font-size: .8rem; font-weight: 800; }
 
 .resume-section { padding: 90px 0; border-top: 1px solid var(--surface-mid); }
 .section-heading { margin-bottom: 42px; }
@@ -950,6 +1064,16 @@ code {
     color: var(--primary);
   }
 
+  .mobile-menu .lang-toggle {
+    justify-content: flex-start;
+    min-width: 0;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    letter-spacing: .02em;
+  }
+  .mobile-menu .lang-toggle::before { content: "Language · "; font-weight: 700; color: var(--muted); margin-right: 4px; }
+
   .page-layout {
     grid-template-columns: 300px minmax(0,1fr);
     gap: 42px;
@@ -958,6 +1082,9 @@ code {
   .resume-overview-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .interest-grid { grid-template-columns: 1fr; }
+  .ongoing-list { grid-template-columns: 1fr; }
 
   .language-card {
     grid-column: 1 / -1;
@@ -996,7 +1123,8 @@ code {
   .profile-card-glow { opacity: .6; }
 
   .hero { padding-top: 46px; }
-  .hero h2 { font-size: clamp(2.45rem,12vw,4rem); }
+  .hero h2 { font-size: clamp(2rem, 9vw, 3rem); }
+  .hero h2 br { display: none; }
 
 
   .resume-overview-grid,
@@ -1034,9 +1162,16 @@ code {
     min-height: 96px;
   }
 
-  .side-project-list {
+  .side-project-list,
+  .interest-grid,
+  .ongoing-list {
     grid-template-columns: 1fr;
   }
+
+  .interest-card { min-height: 0; }
+  .project-list-nested { padding: 0 8px 8px; }
+  .contact-card { padding: 20px; }
+  .contact-email { font-size: 1.05rem; word-break: break-all; }
 
   .method-diagram-float {
     width: 112px;
@@ -1083,7 +1218,9 @@ code {
   .profile-card-grain, .profile-monogram, .profile-userbar, .copy-button,
   .menu-button, .mobile-menu, .project-detail summary, .section-label,
   .project-en, .project-meta .status, .timeline-marker, .timeline::before,
-  .timeline-card .status, .overline, .name-alt {
+  .timeline-card .status, .overline, .name-alt, .hero-actions, .hero-note,
+  .lang-toggle, .ongoing-links, .project-group > summary, .credential-extra > summary,
+  .contact-links, mark.todo {
     display: none !important;
   }
 
@@ -1091,14 +1228,21 @@ code {
   .page-layout { display: block !important; width: 100%; max-width: none; margin: 0; padding: 0; }
   .content-column { display: flex !important; flex-direction: column; }
   .hero { order: 0; }
-  #education { order: 1; }
-  #skills { order: 2; }
-  #experience { order: 3; }
-  #projects { order: 4; }
-  #credentials { order: 5; break-inside: avoid; padding-top: 8px; }
-  #experience { break-before: page; }
-  .project-card:nth-child(2), .project-card:nth-child(3), .project-card:nth-child(6), .project-card:nth-child(8) { break-before: page; }
+  #research { order: 1; }
+  #ongoing { order: 2; }
+  #projects { order: 3; }
+  #experience { order: 4; }
+  #education { order: 5; }
+  #skills { order: 6; }
+  #credentials { order: 7; }
+  #contact { order: 8; }
   .profile-column { position: static; }
+  .interest-grid, .ongoing-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .interest-card, .ongoing-card { min-height: 0; padding: 10px 12px; box-shadow: none; border-radius: 0; background: var(--fill); break-inside: avoid; }
+  .project-group, .credential-extra { background: none; padding: 0; margin-top: 0; border: 0; }
+  .project-group[open] > summary, .credential-extra[open] > summary { display: none; }
+  .project-list-nested { padding: 0; }
+  .contact-card { padding: 0; box-shadow: none; }
 
   /* 머리글(이름) */
   .profile-card-shell, .profile-card, .profile-card-inner {

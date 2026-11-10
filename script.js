@@ -22,6 +22,43 @@ if (menuButton && mobileMenu) {
   });
 }
 
+const langToggles = document.querySelectorAll(".lang-toggle");
+
+function applyLang(lang) {
+  const isEn = lang === "en";
+  const root = document.documentElement;
+  if (isEn) root.dataset.lang = "en";
+  else delete root.dataset.lang;
+  root.lang = isEn ? "en" : "ko";
+  langToggles.forEach((button) => {
+    button.setAttribute("aria-pressed", String(isEn));
+    button.textContent = isEn ? "KO" : "EN";
+    button.setAttribute("aria-label", isEn ? "한국어로 보기" : "Switch to English");
+  });
+  try {
+    localStorage.setItem("portfolio-lang", isEn ? "en" : "ko");
+  } catch {
+    /* 저장 불가 환경에서는 무시 */
+  }
+}
+
+if (langToggles.length) {
+  let saved = null;
+  try {
+    saved = localStorage.getItem("portfolio-lang");
+  } catch {
+    saved = null;
+  }
+  const fromQuery = new URLSearchParams(window.location.search).get("lang");
+  applyLang(fromQuery || saved || "ko");
+
+  langToggles.forEach((button) => {
+    button.addEventListener("click", () => {
+      applyLang(document.documentElement.dataset.lang === "en" ? "ko" : "en");
+    });
+  });
+}
+
 let openedForPrint = [];
 window.addEventListener("beforeprint", () => {
   openedForPrint = [...document.querySelectorAll("details:not([open])")];
