@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="오재원 | 데이터로 계획의 근거를 만드는 도시계획 엔지니어 — 도시계획 포트폴리오">
-  <title>오재원 | 도시계획 포트폴리오</title>
+  <meta name="description" content="오재원 | Data Science Portfolio — 공공·도메인 데이터 분석 경험을 추천시스템과 RAG·지식그래프 연구로 잇는 데이터 사이언스 지망생">
+  <title>오재원 | Data Science Portfolio</title>
 
-  <!-- TODO: 저장소/도메인이 바뀌면(§10-7) 아래 og:url 절대경로도 함께 수정 -->
+  <!-- TODO: 저장소 이름을 바꾸면 아래 og:url 절대경로만 함께 수정 (나머지 경로는 모두 상대 경로) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="오재원 | 데이터로 계획의 근거를 만드는 도시계획 엔지니어">
-  <meta property="og:description" content="공공데이터·공간정보로 현황을 진단하고 계획의 근거를 정리하는 도시계획 포트폴리오입니다.">
+  <meta property="og:title" content="오재원 | Data Science Portfolio">
+  <meta property="og:description" content="공공·도메인 데이터 분석 경험을 추천시스템과 RAG·지식그래프 연구로 잇는 데이터 사이언스 지망생의 포트폴리오">
   <meta property="og:url" content="https://rererererete45.github.io/rerererete45.github.io/">
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <a class="skip-link" href="#main"><span class="ko">본문으로 건너뛰기</span><span class="en">Skip to content</span></a>
 
   <header class="topbar">
     <div class="topbar-inner">
@@ -26,16 +26,20 @@
       </a>
 
       <nav class="desktop-nav" aria-label="주요 메뉴">
-        <a href="#about">소개</a>
-        <a href="#education">학력·성과</a>
-        <a href="#experience">경력</a>
-        <a href="#projects">프로젝트</a>
-        <a href="#skills">기술</a>
-        <a href="#credentials">자격·교육</a>
+        <a href="#about"><span class="ko">소개</span><span class="en">About</span></a>
+        <a href="#research"><span class="ko">연구 관심</span><span class="en">Interests</span></a>
+        <a href="#ongoing"><span class="ko">진행 중 연구</span><span class="en">Ongoing</span></a>
+        <a href="#projects"><span class="ko">프로젝트</span><span class="en">Projects</span></a>
+        <a href="#experience"><span class="ko">경력</span><span class="en">Experience</span></a>
+        <a href="#education"><span class="ko">학력·발표</span><span class="en">Education</span></a>
+        <a href="#skills"><span class="ko">기술</span><span class="en">Skills</span></a>
+        <a href="#credentials"><span class="ko">자격</span><span class="en">Credentials</span></a>
+        <a href="#contact"><span class="ko">연락</span><span class="en">Contact</span></a>
       </nav>
 
       <div class="topbar-actions">
-        <a class="button button-ghost" href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_도시계획_포트폴리오.pdf">PDF 저장</a>
+        <button class="lang-toggle" type="button" aria-pressed="false" aria-label="Switch to English">EN</button>
+        <a class="button button-ghost" href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_포트폴리오.pdf">CV (PDF)</a>
         <a class="button button-primary" href="https://github.com/rererererete45" target="_blank" rel="noreferrer">
           GitHub ↗
         </a>
@@ -48,13 +52,17 @@
     </div>
 
     <nav id="mobile-menu" class="mobile-menu" aria-label="모바일 메뉴">
-      <a href="#about">소개</a>
-      <a href="#education">학력·성과</a>
-      <a href="#experience">경력</a>
-      <a href="#projects">프로젝트</a>
-      <a href="#skills">기술</a>
-      <a href="#credentials">자격·교육</a>
-      <a href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_도시계획_포트폴리오.pdf">PDF 저장</a>
+      <a href="#about"><span class="ko">소개</span><span class="en">About</span></a>
+      <a href="#research"><span class="ko">연구 관심</span><span class="en">Interests</span></a>
+      <a href="#ongoing"><span class="ko">진행 중 연구</span><span class="en">Ongoing research</span></a>
+      <a href="#projects"><span class="ko">프로젝트</span><span class="en">Projects</span></a>
+      <a href="#experience"><span class="ko">경력</span><span class="en">Experience</span></a>
+      <a href="#education"><span class="ko">학력·발표</span><span class="en">Education</span></a>
+      <a href="#skills"><span class="ko">기술</span><span class="en">Skills</span></a>
+      <a href="#credentials"><span class="ko">자격·교육</span><span class="en">Credentials</span></a>
+      <a href="#contact"><span class="ko">연락</span><span class="en">Contact</span></a>
+      <a href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_포트폴리오.pdf">CV (PDF)</a>
+      <button class="lang-toggle" type="button" aria-pressed="false" aria-label="Switch to English">EN</button>
     </nav>
   </header>
 
@@ -84,31 +92,32 @@
               </div>
 
               <div class="profile-copy">
-                <p class="overline">도시계획 포트폴리오</p>
+                <p class="overline">DATA SCIENCE PORTFOLIO</p>
                 <h1>오재원</h1>
                 <p class="name-alt">吳栽沅 · Oh Jaewon</p>
-                <p class="role">Urban Planning · Data · GIS</p>
+                <p class="role">Data Science · Public Data · GIS</p>
               </div>
 
               <p class="profile-summary">
-                도시계획의 현황 진단과 근거 정리를 데이터와 GIS로 합니다.
+                <span class="ko">공공·도시 데이터를 분석해 온 경험을 추천시스템과 RAG·지식그래프 연구로 넓혀 가고 있습니다.</span>
+                <span class="en">Extending hands-on public-data analysis into research on recommender systems, RAG and knowledge graphs.</span>
               </p>
 
               <dl class="profile-facts">
                 <div>
-                  <dt>학력</dt>
-                  <dd>국립한밭대학교 도시공학과 졸업</dd>
+                  <dt><span class="ko">현재</span><span class="en">Now</span></dt>
+                  <dd><span class="ko">한국종합경제연구원 연구원 (경제성·타당성 분석)</span><span class="en">Researcher, KIEC (feasibility analysis)</span></dd>
                 </div>
                 <div>
-                  <dt>주요 분야</dt>
-                  <dd>도시계획·공간데이터·GIS</dd>
+                  <dt><span class="ko">학력</span><span class="en">Degree</span></dt>
+                  <dd><span class="ko">국립한밭대학교 도시공학 학사</span><span class="en">B.Eng. Urban Engineering, Hanbat National Univ.</span></dd>
                 </div>
                 <div>
-                  <dt>학술발표</dt>
-                  <dd>대한국토·도시계획학회 2025 춘계학술대회</dd>
+                  <dt><span class="ko">관심</span><span class="en">Interests</span></dt>
+                  <dd><span class="ko">추천·개인화 / RAG·지식그래프 / 실험·인과추론</span><span class="en">Recommendation / RAG &amp; KG / Experiments &amp; causal inference</span></dd>
                 </div>
                 <div>
-                  <dt>연락처</dt>
+                  <dt><span class="ko">연락처</span><span class="en">Email</span></dt>
                   <dd class="copy-field">
                     <a href="mailto:yxxyy159@gmail.com">yxxyy159@gmail.com</a>
                     <button type="button" class="copy-button" data-copy="yxxyy159@gmail.com" aria-label="이메일 주소 복사">
@@ -123,14 +132,17 @@
               </dl>
 
               <div class="profile-links">
+                <a href="https://github.com/rererererete45/ds-study" target="_blank" rel="noreferrer">
+                  <span><span class="ko">학습 기록 · ds-study (SQL 정리)</span><span class="en">Study log · ds-study (SQL)</span></span><strong>↗</strong>
+                </a>
                 <a href="https://github.com/rererererete45/certification-notes" target="_blank" rel="noreferrer">
-                  <span>학습 저장소</span><strong>↗</strong>
+                  <span><span class="ko">학습 기록 · certification-notes</span><span class="en">Study log · certification-notes</span></span><strong>↗</strong>
                 </a>
               </div>
 
               <div class="profile-actions">
-                <a class="button button-primary" href="#projects">프로젝트 보기</a>
-                <a class="button button-ghost" href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_도시계획_포트폴리오.pdf">PDF 저장</a>
+                <a class="button button-primary" href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_포트폴리오.pdf">CV (PDF)</a>
+                <a class="button button-ghost" href="#contact"><span class="ko">연락하기</span><span class="en">Contact</span></a>
               </div>
             </div>
           </div>
@@ -138,152 +150,177 @@
 
         <div class="availability">
           <span aria-hidden="true"></span>
-          <p>프로젝트와 학습 기록은 꾸준히 업데이트합니다.</p>
+          <p><span class="ko">2027년 데이터 사이언스 석사 진학을 준비하고 있습니다.</span><span class="en">Preparing for an M.S. in Data Science starting 2027.</span></p>
         </div>
       </aside>
 
       <div class="content-column">
         <section class="hero" id="about">
-          <p class="section-label">PROFILE</p>
+          <p class="section-label">ABOUT</p>
 
-          <h2>데이터로 계획의 근거를 만드는<br>도시계획 엔지니어</h2>
+          <h2>
+            <span class="ko">공공·도메인 데이터를 <br>추천·검색 모델로 잇는 <br>데이터 사이언스 지망생</span>
+            <span class="en">Connecting public-domain data <br>to recommendation and <br>retrieval models</span>
+          </h2>
 
           <p class="hero-lead">
-            도시·지역계획 실무에서 기초조사, 현황분석, 수요추정을 데이터와 GIS로 수행해 왔습니다.
-            인구·주택·토지이용 자료를 지역 단위로 분석하고, 계획에 바로 쓸 수 있는 근거로 정리합니다.
+            <span class="ko">구청과 연구원에서 도시·공공 데이터를 수집하고 분석해 수요를 예측하고 대안을 비교하는 일을 해 왔습니다.
+            그 과정에서 익힌 공공 데이터 다루기와 실험 설계를, 사용자의 다음 선택을 맞히는 추천시스템과
+            근거를 찾아 답하는 RAG·지식그래프 연구로 넓혀 가려 합니다.</span>
+            <span class="en">At a district office and a research institute I collected and analysed urban and public data to forecast demand and compare alternatives.
+            I want to carry that experience with public data and experiment design into research on recommender systems that predict a user's next choice,
+            and on RAG and knowledge-graph systems that answer with evidence.</span>
           </p>
 
-          <div class="hero-summary">
-            <article>
-              <span>PLANNING</span>
-              <strong>도시·지역계획</strong>
-              <p>현황분석, 계획 검토, 타당성 검토</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_포트폴리오.pdf">CV (PDF)</a>
+            <a class="button button-ghost" href="https://github.com/rererererete45" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <button type="button" class="button button-ghost copy-button copy-button-wide" data-copy="yxxyy159@gmail.com" aria-label="이메일 주소 복사">
+              <svg class="copy-button-icon" viewBox="0 0 20 20" aria-hidden="true">
+                <rect x="6.5" y="6.5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M4.5 13.5v-7a2 2 0 0 1 2-2h7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              </svg>
+              <span class="ko">이메일 복사</span><span class="en">Copy email</span>
+              <span class="copy-button-label">복사됨</span>
+            </button>
+          </div>
+          <p class="hero-note"><mark class="todo">TODO: CV PDF로 교체 (현재 파일은 이전 버전 포트폴리오)</mark></p>
+        </section>
+
+        <section class="resume-section" id="research">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">RESEARCH INTERESTS</p>
+              <h2><span class="ko">연구 관심</span><span class="en">Research interests</span></h2>
+            </div>
+          </header>
+
+          <div class="interest-grid">
+            <article class="interest-card">
+              <span class="interest-index">01</span>
+              <h3><span class="ko">추천·개인화</span><span class="en">Recommendation &amp; personalisation</span></h3>
+              <p class="interest-sub"><span class="ko">순차 추천 · 개인화 LLM</span><span class="en">Sequential recommendation · personalised LLMs</span></p>
+              <p>
+                <span class="ko">청취·클릭 로그처럼 순서가 있는 행동 기록에서 다음 선택을 예측하고, 사용자별 맥락을 반영하는 개인화 모델에 관심이 있습니다.</span>
+                <span class="en">Predicting the next choice from ordered behaviour logs such as listening or click histories, and personalising models to each user's context.</span>
+              </p>
             </article>
-            <article>
-              <span>DATA</span>
-              <strong>데이터 분석</strong>
-              <p>수집, 정제, 분석, 시각화, 해석</p>
+            <article class="interest-card">
+              <span class="interest-index">02</span>
+              <h3><span class="ko">RAG·지식그래프 질의응답</span><span class="en">RAG &amp; knowledge-graph QA</span></h3>
+              <p class="interest-sub"><span class="ko">비교형·수치 질문</span><span class="en">Comparative and numeric questions</span></p>
+              <p>
+                <span class="ko">법령 조문이나 수치처럼 틀리면 안 되는 도메인 문서에서 근거를 찾아 답하고, 특히 두 대상을 비교하는 질문에서 검색 증강이 실제로 도움이 되는지 확인하고 싶습니다.</span>
+                <span class="en">Answering with evidence from domain documents where errors matter, such as statutes and figures, and testing whether retrieval really helps on comparative questions.</span>
+              </p>
             </article>
-            <article>
-              <span>SPATIAL</span>
-              <strong>GIS·공간분석</strong>
-              <p>지오프로세싱과 공간 데이터 해석</p>
+            <article class="interest-card">
+              <span class="interest-index">03</span>
+              <h3><span class="ko">실험과 의사결정</span><span class="en">Experiments &amp; decision-making</span></h3>
+              <p class="interest-sub"><span class="ko">경제성 분석 · A/B 테스트 · 인과추론</span><span class="en">Feasibility analysis · A/B testing · causal inference</span></p>
+              <p>
+                <span class="ko">대안을 숫자로 비교해 온 경제성 분석 경험을 A/B 테스트와 인과추론으로 이어, 모델이 실제 결정에 도움이 됐는지 검증하는 방법에 관심이 있습니다.</span>
+                <span class="en">Extending feasibility analysis, where alternatives are compared in numbers, to A/B testing and causal inference that verify whether a model actually improved a decision.</span>
+              </p>
             </article>
           </div>
         </section>
 
-        <section class="resume-section" id="education">
+        <section class="resume-section" id="ongoing">
           <header class="section-heading">
             <div>
-              <p class="section-label">EDUCATION & ACHIEVEMENTS</p>
-              <h2>학력·성과</h2>
+              <p class="section-label">ONGOING RESEARCH</p>
+              <h2><span class="ko">진행 중인 연구 프로젝트</span><span class="en">Ongoing research projects</span></h2>
             </div>
           </header>
 
-          <div class="resume-overview-grid">
-            <article class="education-card overview-card">
-              <div class="card-topline">
-                <span>EDUCATION</span>
-                <time>2018.03–2025.02</time>
+          <div class="ongoing-list">
+            <article class="ongoing-card">
+              <div class="project-meta">
+                <span class="status status-amber"><span class="ko">진행 중</span><span class="en">In progress</span></span>
+                <span>2026– · <span class="ko">개인 연구</span><span class="en">Independent</span> · RAG</span>
               </div>
-              <h3>국립한밭대학교</h3>
-              <p class="accent-text">도시공학과 · 졸업</p>
-              <dl>
-                <div><dt>학위 과정</dt><dd>학사</dd></div>
-                <div><dt>전공</dt><dd>도시공학</dd></div>
-                <div><dt>학점</dt><dd>3.6 / 4.5</dd></div>
+              <h3><span class="ko">도시계획 법령 RAG</span><span class="en">RAG over Korean urban-planning statutes</span></h3>
+              <p class="ongoing-question">
+                <span class="ko">비교형 질문에서 RAG는 정말 도움이 되나?</span>
+                <span class="en">Does retrieval actually help on comparative questions?</span>
+              </p>
+              <dl class="project-detail-body ongoing-body">
+                <div>
+                  <dt><span class="ko">데이터</span><span class="en">Data</span></dt>
+                  <dd><ul>
+                    <li>국가법령정보 OpenAPI — 국토계획법·시행령, 서울시 도시계획 조례</li>
+                    <li>조문 단위로 나눈 문서 DB</li>
+                  </ul></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">방법</span><span class="en">Method</span></dt>
+                  <dd><ul>
+                    <li>v1: LLM 단독 vs RAG 비교</li>
+                    <li>v2: BM25 + 임베딩 하이브리드 검색</li>
+                  </ul></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">평가</span><span class="en">Evaluation</span></dt>
+                  <dd><ul>
+                    <li>정답률, 근거 조문 Recall@k</li>
+                    <li>단일 질문과 비교형 질문의 차이 — 직접 만든 질문 60개 → 100개로 확장</li>
+                  </ul></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">결과</span><span class="en">Results</span></dt>
+                  <dd class="pending"><span class="ko">진행 중 — 결과는 v1 이후 채웁니다.</span><span class="en">Pending — to be filled after v1.</span></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">일정</span><span class="en">Timeline</span></dt>
+                  <dd>v1 2027.01 · v2 2027.03</dd>
+                </div>
               </dl>
-            </article>
-
-            <article class="key-cert-card overview-card">
-              <div class="card-topline">
-                <span>KEY CERTIFICATIONS</span>
-                <span>4 SELECTED</span>
-              </div>
-              <h3>핵심 자격</h3>
-              <ul class="key-cert-list">
-                <li>
-                  <strong>도시계획기사</strong>
-                  <span>도시계획</span>
-                </li>
-                <li>
-                  <strong>빅데이터분석기사</strong>
-                  <span>데이터 분석</span>
-                </li>
-                <li>
-                  <strong>컴퓨터활용능력 1급</strong>
-                  <span>OA</span>
-                </li>
-                <li>
-                  <strong>Autodesk Certified User: AutoCAD</strong>
-                  <span>CAD</span>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="resume-section" id="experience">
-          <header class="section-heading">
-            <div>
-              <p class="section-label">EXPERIENCE</p>
-              <h2>경력·연구</h2>
-            </div>
-          </header>
-
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-period">2025.10–현재</div>
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <span class="status status-primary">PROFESSIONAL</span>
-                <h3>학술연구</h3>
-                <p class="organization">(재)한국종합경제연구원 · 연구원 · 학술연구1팀</p>
-                <p>학술연구용역 경제성 분석: 노후전동차 경제성평가·노후 철도시설 개량투자 효과분석 연구용역 수행(NPV·B/C 산정, 민감도 분석, 관계법령 검토), 계획 용역 제안서 작성 참여</p>
+              <div class="ongoing-links">
+                <span class="button button-ghost is-disabled" aria-disabled="true">GitHub <span class="ko">(준비 중)</span><span class="en">(coming soon)</span></span>
               </div>
             </article>
 
-            <article class="timeline-item">
-              <div class="timeline-period">2025.04</div>
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <span class="status status-green">PRESENTATION</span>
-                <h3>도시 간 연구 협력 네트워크의 공간 구조 분석</h3>
-                <p class="organization">대한국토·도시계획학회 2025 춘계학술대회</p>
-                <p>2015년·2023년 국가 R&amp;D 사업 기반 도시 간 협력 네트워크 분석, 공동저자</p>
+            <article class="ongoing-card">
+              <div class="project-meta">
+                <span class="status status-amber"><span class="ko">진행 중</span><span class="en">In progress</span></span>
+                <span>2026– · <span class="ko">개인 연구</span><span class="en">Independent</span> · Sequential Recommendation</span>
               </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-period">2025.02–2025.09</div>
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <span class="status status-sky">INTERNSHIP</span>
-                <h3>유성형 공공일자리(공공빅데이터 청년 인턴십)</h3>
-                <p class="organization">유성구청</p>
-                <p>교통·돌봄 등 행정 데이터를 GIS·수요예측 모델로 분석 및 정책 제안</p>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-period">2024.06–2025.01</div>
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <span class="status status-violet">RESEARCH</span>
-                <h3>상호관련성에 기반한 도시의 네트워크와 영향력에 관한 예측 연구</h3>
-                <p class="organization">한국연구재단(과학기술정보통신부) · 학부연구생</p>
-                <p>웹·교통·항공 관계 데이터를 네트워크화하고 중심성을 계산해 도시 네트워크의 공간 구조 분석</p>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-period">2024.01–2025.01</div>
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <span class="status status-violet">RESEARCH</span>
-                <h3>빅데이터 기반 인공지능 도시계획 기술 개발</h3>
-                <p class="organization">국토교통과학기술진흥원 · 학부연구생</p>
-                <p>상주·유동인구 데이터 결합, 도시 규모별 지역 균형발전 점수 산출</p>
+              <h3><span class="ko">Spotify 청취 로그 기반 순차 추천</span><span class="en">Sequential recommendation from Spotify listening logs</span></h3>
+              <p class="ongoing-question">
+                <span class="ko">공개 청취 로그로 학습한 순차 추천 모델이 내 다음 곡을 얼마나 맞히나? 나는 어떤 맥락에서 곡을 건너뛰나?</span>
+                <span class="en">How well does a sequential model trained on public listening logs predict my next track, and in which contexts do I skip?</span>
+              </p>
+              <dl class="project-detail-body ongoing-body">
+                <div>
+                  <dt><span class="ko">데이터</span><span class="en">Data</span></dt>
+                  <dd><ul>
+                    <li>ListenBrainz 공개 청취 로그 (CC0)</li>
+                    <li>내 Spotify 스트리밍 기록 — 원본 비공개, 집계 결과만 공개</li>
+                  </ul></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">방법</span><span class="en">Method</span></dt>
+                  <dd><ul>
+                    <li>인기도 기준선 → item-kNN → SASRec</li>
+                    <li>스킵·자동재생 맥락 분석</li>
+                  </ul></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">평가</span><span class="en">Evaluation</span></dt>
+                  <dd>Recall@10, NDCG@10</dd>
+                </div>
+                <div>
+                  <dt><span class="ko">결과</span><span class="en">Results</span></dt>
+                  <dd class="pending"><span class="ko">진행 중 — 결과는 v1 이후 채웁니다.</span><span class="en">Pending — to be filled after v1.</span></dd>
+                </div>
+                <div>
+                  <dt><span class="ko">일정</span><span class="en">Timeline</span></dt>
+                  <dd>v1 2027.03</dd>
+                </div>
+              </dl>
+              <div class="ongoing-links">
+                <span class="button button-ghost is-disabled" aria-disabled="true">GitHub <span class="ko">(준비 중)</span><span class="en">(coming soon)</span></span>
               </div>
             </article>
           </div>
@@ -292,8 +329,8 @@
         <section class="resume-section" id="projects">
           <header class="section-heading">
             <div>
-              <p class="section-label">SELECTED WORK</p>
-              <h2>대표 프로젝트</h2>
+              <p class="section-label">DATA PROJECTS</p>
+              <h2><span class="ko">데이터 프로젝트</span><span class="en">Data projects</span></h2>
             </div>
           </header>
 
@@ -303,20 +340,97 @@
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
-                  <span>2025 · 유성구청 인턴 · Demand Forecasting</span>
+                  <span>2024–2025 · <span class="ko">학부연구생</span><span class="en">Undergraduate researcher</span> · Graph Analysis</span>
                 </div>
-                <h3>초등 돌봄 수요예측 및 입지 분석</h3>
-                <p class="project-en">Demand Forecasting &amp; Site Selection for After-school Care</p>
+                <h3><span class="ko">도시 간 관계 네트워크 구축 및 중심성 분석</span><span class="en">Inter-city relational network &amp; centrality analysis</span></h3>
                 <p>
-                  행정동별 초등학생 수를 예측하고 100m 격자 단위로 돌봄센터 우선 입지를 뽑았습니다.
-                  새로 들어서는 아파트 단지의 돌봄 수요까지 함께 추정했습니다.
+                  <span class="ko">시군구 간 관계를 웹·교통·항공 데이터로 그래프로 만들고, 중심성을 계산해 도시 네트워크의 공간 구조를 분석했습니다.</span>
+                  <span class="en">Built a graph of relations between districts from web, transport and flight data, and analysed the spatial structure of the city network with centrality measures.</span>
+                </p>
+                <div class="tag-list">
+                  <span>Python</span><span>웹 크롤링</span><span>네트워크 중심성</span><span>geopandas</span><span>QGIS</span>
+                </div>
+
+                <details class="project-detail">
+                  <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
+
+                  <figure class="method-diagram">
+                    <figcaption>분석 프로세스</figcaption>
+                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 관계 데이터 구축 → 네트워크 중심성 계산 → 공간 시각화 → 두 시점 비교">
+                      <span class="flow-step">관계 데이터 구축</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">중심성 계산</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">공간 시각화</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">두 시점 비교</span>
+                    </div>
+                  </figure>
+
+                  <dl class="project-detail-body">
+                    <div>
+                      <dt>문제</dt>
+                      <dd><ul>
+                        <li>도시 간 상호작용을 어떻게 정량화하고, 어느 도시가 네트워크의 중심인지 공간적으로 보일 수 있는가</li>
+                        <li>한국연구재단 과제 「상호관련성에 기반한 도시의 네트워크와 영향력에 관한 예측 연구」의 일부</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>데이터</dt>
+                      <dd><ul>
+                        <li>국가 도메인(.kr) 웹사이트 간 하이퍼링크 연결관계 — 직접 크롤링해 구축</li>
+                        <li>철도 이동·교통량 등 교통 관계, 국내 항공편 연결관계</li>
+                        <li>학회 발표에서는 2015년·2023년 국가 R&amp;D 사업 자료로 도시 간 연구 협력 관계 구축</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>방법</dt>
+                      <dd><ul>
+                        <li>시군구를 노드, 관계를 엣지로 하는 네트워크 데이터 구축</li>
+                        <li>Python으로 네트워크 중심성 계산</li>
+                        <li>QGIS·geopandas로 중심성을 지도에 표시, 2015년과 2023년 두 시점 비교</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd><ul>
+                        <li>과제 결과는 비공개. 공개 범위는 2025년 4월 대한국토·도시계획학회 춘계학술대회 발표(공동저자)</li>
+                        <li><mark class="todo">TODO: 결과 수치 (발표 자료에서 공개 가능한 중심성 값·순위 변화)</mark></li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>내 역할</dt>
+                      <dd><ul>
+                        <li>하이퍼링크 관계 데이터 크롤링·구축, 중심성 계산, 공간 시각화</li>
+                        <li>학회 발표 공동저자</li>
+                      </ul></dd>
+                    </div>
+                  </dl>
+                </details>
+              </div>
+              <div class="project-preview preview-network" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">02</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-green">PUBLIC</span>
+                  <span>2025 · <span class="ko">유성구청 인턴</span><span class="en">Intern, Yuseong-gu Office</span> · Demand Forecasting</span>
+                </div>
+                <h3><span class="ko">초등 돌봄 수요예측 및 입지 분석</span><span class="en">Demand forecasting &amp; site selection for after-school care</span></h3>
+                <p>
+                  <span class="ko">행정동별 초등학생 수를 예측하고 100m 격자 단위로 돌봄센터 우선 입지를 뽑았습니다. 입주 예정 단지의 수요는 랜덤포레스트로 추정했습니다.</span>
+                  <span class="en">Forecast primary-school population by neighbourhood, ranked care-centre sites on a 100 m grid, and estimated demand from upcoming housing with a random forest.</span>
                 </p>
                 <div class="tag-list">
                   <span>코호트 요인법</span><span>Prophet</span><span>랜덤포레스트</span><span>입지분석</span>
                 </div>
 
                 <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
+                  <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
 
                   <figure class="method-diagram">
                     <figcaption>분석 프로세스</figcaption>
@@ -333,41 +447,45 @@
 
                   <dl class="project-detail-body">
                     <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>돌봄 시설 배치를 위한 정량적 근거 필요</li>
-                          <li>공공 빅데이터 표준분석모델 적용</li>
-                        </ul>
-                      </dd>
+                      <dt>문제</dt>
+                      <dd><ul>
+                        <li>돌봄 시설이 입주 뒤에 설치되어 생기는 공백을 줄이려면, 어디에 먼저 두어야 하는가</li>
+                        <li>공공 빅데이터 표준분석모델을 유성구 자료에 적용</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>데이터</dt>
-                      <dd>
-                        <ul>
-                          <li>행정기관코드</li>
-                          <li>인구이동 통계</li>
-                          <li>격자 단위 초등학생 수</li>
-                          <li>초등학교·지역아동센터 등 시설 분포</li>
-                          <li>신규 단지 정보</li>
-                        </ul>
-                      </dd>
+                      <dd><ul>
+                        <li>행정기관코드, 인구이동 통계, 격자 단위 초등학생 수</li>
+                        <li>초등학교·지역아동센터 등 시설 분포, 신규 단지 정보</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>방법</dt>
                       <dd>
                         <ul>
-                          <li>코호트 요인법·Prophet 시계열로 초등학생 수 예측</li>
-                          <li>아동 수·주거밀도·학교 접근성·유사시설 접근성 구간화, 격자별 입지 점수 산출</li>
-                          <li>신규 단지는 사전 학습된 랜덤포레스트 회귀 모델로 초등학생 수 추정</li>
-                          <li>반경 1km 내 우선 입지까지 거리 분석</li>
-                          <li>표준분석모델의 지역 데이터 구축·적용, 결과 해석 담당</li>
+                          <li>코호트 요인법·Prophet 시계열로 행정동별 초등학생 수 예측</li>
+                          <li>아동 수·주거밀도·학교 접근성·유사시설 접근성을 구간화해 격자별 입지 점수 산출</li>
+                          <li>신규 단지는 사전 학습된 랜덤포레스트 회귀 모델로 초등학생 수 추정, 반경 1km 내 우선 입지까지 거리 분석</li>
                         </ul>
                         <div class="formula-box">
                           <p class="formula">입지점수 = 아동수 + 주거밀도 + 학교접근성 − 유사돌봄시설 접근성</p>
                           <p class="formula-note">각 요소를 10/7/3등분으로 구간화한 뒤 FGI·AHP 기반 가중치를 반영해 격자별 종합점수를 산출</p>
                         </div>
                       </dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd><ul>
+                        <li>행정동별 설치 우선순위와 신규 단지별 적정 입지 거리를 정리해 개발계획 기초자료로 제공</li>
+                        <li><mark class="todo">TODO: 결과 수치 (예측 오차, 우선순위 상위 행정동 등 공개 가능한 값)</mark></li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>내 역할</dt>
+                      <dd><ul>
+                        <li>표준분석모델의 지역 데이터 구축·적용, 결과 해석</li>
+                      </ul></dd>
                     </div>
                   </dl>
                 </details>
@@ -378,160 +496,87 @@
             </article>
 
             <article class="project-card">
-              <div class="project-index">02</div>
-              <div class="project-copy">
-                <div class="project-meta">
-                  <span class="status status-green">PUBLIC</span>
-                  <span>2025 · 유성구청 인턴 · Facility Planning</span>
-                </div>
-                <h3>장대행복주택 국공립어린이집 수요 분석</h3>
-                <p class="project-en">Childcare Facility Demand Analysis for a New Public Housing Complex</p>
-                <p>
-                  신축 공공주택에 국공립 어린이집이 꼭 필요한지, 입주 전후 시나리오로 나눠 비교했습니다.
-                </p>
-                <div class="tag-list">
-                  <span>시설확충최적화지수</span><span>가중치</span><span>GIS</span><span>정책분석</span>
-                </div>
-
-                <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
-
-                  <figure class="method-diagram">
-                    <figcaption>분석 프로세스</figcaption>
-                    <img src="assets/projects/childcare-process.png" width="1232" height="672" alt="분석 프로세스: 1.데이터 수집 → 2.데이터 전처리 → 3.데이터 통합·현황분석 → 4.장래 국공립어린이집 수요 추정">
-                  </figure>
-
-                  <dl class="project-detail-body">
-                    <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>500세대 이상 공동주택은 어린이집을 국공립으로 운영해야 함 (「영유아보육법 시행령」 제19조의2)</li>
-                          <li>국공립 수요 증가 대비 공급 부족</li>
-                          <li>장대행복주택 입주 예정에 따른 설치 필요성 검토</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>데이터</dt>
-                      <dd>
-                        <ul>
-                          <li>지자체 제공 아동일람표·어린이집현황·어린이집일람표</li>
-                          <li>공공데이터포털 집계구별 인구·주민등록 인구 통계</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>방법</dt>
-                      <dd>
-                        <ul>
-                          <li>행정안전부 보육 서비스 빅데이터 분석모델(2018) 적용</li>
-                          <li>영유아·가임기 여성 인구 점수, 접근성 점수 산정 후 시설확충최적화지수 산출</li>
-                          <li>지수 백분위 기준 6등급 구분</li>
-                          <li>입주 전 / 입주 후 두 시나리오 비교</li>
-                        </ul>
-                        <div class="formula-box">
-                          <p class="formula">시설확충최적화지수 = 인구현황점수 × 0.6 + 접근성점수 × 0.4</p>
-                          <p class="formula-note">인구현황점수 = 영유아 점수 + 가임기 여성 점수 · 접근성점수 = 이용자 접근성 점수<br>「보육 서비스 강화를 위한 빅데이터 분석」, 행정안전부, 2018</p>
-                        </div>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>결과</dt>
-                      <dd>
-                        <figure class="method-diagram">
-                          <figcaption>시설확충최적화등급 — 입주 전(왼쪽) vs 입주 후(오른쪽)</figcaption>
-                          <div class="method-diagram-pair">
-                            <img src="assets/projects/childcare-grade-pre.png" width="1169" height="582" alt="입주 전 시설확충최적화등급 지도: 온천2동_1_1 집계구가 3.다소낮음 등급으로 표시된 유성구 지도">
-                            <img src="assets/projects/childcare-grade-post.png" width="1144" height="642" alt="입주 후 시설확충최적화등급 지도: 온천2동_1_1 집계구가 4.다소우선 등급으로 상승해 표시된 유성구 지도">
-                          </div>
-                        </figure>
-                        <ul>
-                          <li>입주 전: 지수 28점(3.다소낮음 등급), 평균(36점) 대비 -8점, 상위 68.4%</li>
-                          <li>입주 후: 지수 44점(4.다소우선 등급), 평균(37점) 대비 +7점, 상위 23.7%</li>
-                          <li>영유아·가임기 여성 점수 각각 5점 만점 도달, 순위 상승폭 약 45%p</li>
-                          <li>입주 시점에 맞춘 국공립 어린이집 확충 사전 검토 제안</li>
-                        </ul>
-                      </dd>
-                    </div>
-                  </dl>
-                </details>
-              </div>
-              <div class="project-preview preview-document" aria-hidden="true">
-                <i>[영유아]</i><i>[접근성]</i><i>[지수]</i>
-              </div>
-            </article>
-
-            <article class="project-card">
               <div class="project-index">03</div>
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
-                  <span>2026 · 한국종합경제연구원 · Planning Proposal</span>
+                  <span><span class="ko">학부 4학년 · 개인 연구</span><span class="en">Senior year · independent</span> · Regression vs. ML</span>
                 </div>
-                <h3>평택시 농촌공간재구조화 수립용역 제안</h3>
-                <p class="project-en">Proposal for the Pyeongtaek Rural Spatial Restructuring Plan</p>
+                <h3><span class="ko">지방소멸 영향 요인 분석: 다중회귀와 머신러닝 비교</span><span class="en">Drivers of regional decline: regression vs. machine learning</span></h3>
                 <p>
-                  제안서 준비 과정에서 시의회 안건과 부서 업무보고로 지역 현안의 흐름을 진단하고,
-                  도시 확장 계획과 농촌공간이 충돌하는 지점을 정리했습니다.
+                  <span class="ko">전국 229개 시군구의 2022년 자료로 소멸위험지수에 영향을 주는 요인을 다중회귀·단계적 회귀·머신러닝 앙상블로 비교했습니다.</span>
+                  <span class="en">Compared multiple regression, stepwise regression and ML ensembles on 37 variables for 229 districts to explain the regional-extinction risk index.</span>
                 </p>
                 <div class="tag-list">
-                  <span>현안 진단</span><span>상위계획 검토</span><span>공개자료 분석</span>
+                  <span>다중회귀</span><span>단계적 회귀</span><span>Random Forest · XGBoost</span><span>Voting 앙상블</span>
                 </div>
 
                 <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
+                  <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
 
                   <figure class="method-diagram">
                     <figcaption>분석 프로세스</figcaption>
-                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 공개자료 수집 → 시기별 현안 정리 → 도시 확장 계획과 충돌 지점 도출 → 제안 방향 반영">
-                      <span class="flow-step">공개자료 수집</span>
+                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 문헌 고찰·변수 선정 → 데이터 구축·전처리 → 회귀분석·머신러닝 모델 구축 → 모델 평가·비교">
+                      <span class="flow-step">문헌 고찰·변수 선정</span>
                       <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">시기별 현안 정리</span>
+                      <span class="flow-step">데이터 구축·전처리</span>
                       <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">계획 간 충돌 지점 도출</span>
+                      <span class="flow-step">회귀·머신러닝 모델 구축</span>
                       <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">제안 방향 반영</span>
+                      <span class="flow-step">모델 평가·비교</span>
                     </div>
                   </figure>
 
                   <dl class="project-detail-body">
                     <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>농촌공간재구조화법 시행(2024)에 따른 농촌공간계획 수립 수요 증가</li>
-                          <li>평택시 농촌공간재구조화 수립용역 제안 참여</li>
-                          <li>제안서 고유 전략과 미공개 자료는 비공개, 공개자료 기반 진단 방법만 서술</li>
-                        </ul>
-                      </dd>
+                      <dt>문제</dt>
+                      <dd><ul>
+                        <li>어떤 지역 특성이 지방소멸 위험을 높이거나 낮추는가, 그리고 전통적 회귀와 머신러닝은 같은 답을 내는가</li>
+                        <li>기존 연구의 주거·고용 변수에 교육 인프라와 외국인 인구 변수를 더해 범위 확장</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>데이터</dt>
                       <dd>
                         <ul>
-                          <li>평택시의회 안건 (2024~2025)</li>
-                          <li>부서별 업무보고 (2024~2025)</li>
-                          <li>2040 도시기본계획, 2030 도시관리계획 재정비 등 상위·관련 계획</li>
-                          <li>지제역세권 공공주택지구 등 개발사업 현황</li>
+                          <li>전국 시군구 229개, 2022년 자료</li>
+                          <li>KDI 경제정보센터 지역발전지수(2022)를 참고해 독립변수 37개 구축 (주거·인구, 경제활동·고용, 의료·안전, 인프라·환경, 사회·여가, 교육)</li>
                         </ul>
+                        <div class="formula-box">
+                          <p class="formula">소멸위험지수 = 20~39세 여성인구 / 65세 이상 인구</p>
+                          <p class="formula-note">종속변수 · 일본 마스다 보고서에서 처음 제안된 지표</p>
+                        </div>
                       </dd>
                     </div>
                     <div>
                       <dt>방법</dt>
-                      <dd>
-                        <ul>
-                          <li>시의회 안건·부서 업무보고를 시기별로 정리해 지역 현안 흐름 진단</li>
-                          <li>도시 확장 계획과 농촌공간이 충돌하는 지점 정리</li>
-                          <li>진단 결과를 제안 방향에 반영</li>
-                        </ul>
-                      </dd>
+                      <dd><ul>
+                        <li>결측치(평균값 대체)·이상치 처리, 데이터 스케일링</li>
+                        <li>다중회귀: 상관분석과 VIF로 37개 변수를 8개로 축소</li>
+                        <li>단계적 회귀: 전진선택법과 후진제거법을 결합해 12단계로 변수 선택</li>
+                        <li>머신러닝: GBC·Random Forest·XGBoost를 RandomizedSearchCV로 최적화, Stratified K-Fold로 검증, Hard·Soft Voting 앙상블 비교</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd><ul>
+                        <li>다중회귀 R² 0.849, 단계적 회귀 R² 0.909, Soft Voting 앙상블 F1(weighted) 0.892 — Soft Voting을 최종 모델로 선정</li>
+                        <li>세 방법 모두에서 주거·인구, 경제활동·고용, 교육 변수가 유의</li>
+                        <li>빈집 비율·노후주택 비율·독거노인가구 비율이 높을수록 위험 증가, 유치원 취원율·경제활동참가율이 높을수록 위험 감소</li>
+                        <li>머신러닝 변수 중요도: 1인가구 비율, 유치원 취원율, 1인당 녹지면적 순</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>내 역할</dt>
+                      <dd><ul>
+                        <li>개인 연구 — 변수 설계, 데이터 구축, 모델링, 결과 해석 전부</li>
+                      </ul></dd>
                     </div>
                   </dl>
                 </details>
               </div>
-              <div class="project-preview preview-document" aria-hidden="true">
-                <i>[안건]</i><i>[업무보고]</i><i>[상위계획]</i>
+              <div class="project-preview preview-chart" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
               </div>
             </article>
 
@@ -540,20 +585,98 @@
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
-                  <span>2025 · 유성구청 인턴 · Traffic Safety</span>
+                  <span>2026 · <span class="ko">한국종합경제연구원</span><span class="en">KIEC</span> · Feasibility Study</span>
                 </div>
-                <h3>이륜차 사고 위험구간 분석 및 대응 전략</h3>
-                <p class="project-en">Motorcycle Accident Hotspot Analysis &amp; Response Strategy</p>
+                <h3><span class="ko">철도 인프라 경제성·투자효과 분석</span><span class="en">Economic feasibility of ageing rail infrastructure</span></h3>
                 <p>
-                  교차로별 위험지수(ARI)로 이륜차 사고가 몰리는 구간을 찾고,
-                  자치구 권한 안에서 실행 가능한 대응 전략을 정리했습니다.
+                  <span class="ko">노후 도시철도 차량·시설의 개량 대안을 NPV·B/C·LCC로 비교하고, 할인율을 바꿔 가며 결과가 얼마나 달라지는지 민감도 분석을 했습니다.</span>
+                  <span class="en">Compared renewal alternatives for ageing metro rolling stock and facilities with NPV, B/C and LCC, and ran discount-rate sensitivity analyses.</span>
+                </p>
+                <div class="tag-list">
+                  <span>NPV·B/C</span><span>LCC</span><span>민감도 분석</span><span>관계법령 검토</span>
+                </div>
+
+                <details class="project-detail">
+                  <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
+
+                  <figure class="method-diagram">
+                    <figcaption>분석 프로세스</figcaption>
+                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 노후화·성능평가 체계 비교 → 잔존수명·수리한계비용 산정 → NPV·B/C·LCC 대안 비교 → 할인율 민감도 분석">
+                      <span class="flow-step">노후화·성능평가 체계 비교</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">잔존수명·수리한계비용 산정</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">NPV·B/C·LCC 대안 비교</span>
+                      <span class="flow-arrow" aria-hidden="true">→</span>
+                      <span class="flow-step">할인율 민감도 분석</span>
+                    </div>
+                  </figure>
+
+                  <dl class="project-detail-body">
+                    <div>
+                      <dt>문제</dt>
+                      <dd><ul>
+                        <li>노후 전동차와 철도시설을 언제, 어떤 범위로 개량·교체하는 것이 경제적인가</li>
+                        <li>연구용역 두 건(노후전동차 경제성평가, 노후 철도시설 개량투자 효과분석)</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>데이터</dt>
+                      <dd><ul>
+                        <li>선행 3개년 노후화·성능평가 보고서, 정밀안전진단 잔존수명</li>
+                        <li>발주처 제공 자료 — 비공개</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>방법</dt>
+                      <dd><ul>
+                        <li>선행 보고서의 노후화 모델·성능평가 체계 변화 비교 검토</li>
+                        <li>잔존수명 → 대수선 범위 선정 → 경제적 수리한계비용 산정</li>
+                        <li>대안별 NPV·B/C·LCC 산정·비교, 실질할인율을 바꿔 가며 민감도 분석</li>
+                        <li>생애주기비용(LCC) 모델 구조 분석 및 호선별 재구성</li>
+                        <li>관계법령 검토: 인용된 철도안전법·관련 고시를 현행 기준으로 갱신, 개정으로 바뀐 별표 조항 번호 정정</li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd><ul>
+                        <li>발주처 용역이라 수치·보고서는 비공개. 방법과 역할만 기재</li>
+                        <li><mark class="todo">TODO: 공개 가능 여부 확인 — 대안 수, 분석 기간, 민감도 범위 등 일반화된 수치를 쓸 수 있는지</mark></li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>내 역할</dt>
+                      <dd><ul>
+                        <li>발주처 자료요청 목록 정리, 착수보고 자료 작성, 보고서 작성·수정</li>
+                        <li>NPV·B/C·LCC 산정과 민감도 분석, LCC 모델 재구성, 관계법령 현행화</li>
+                      </ul></dd>
+                    </div>
+                  </dl>
+                </details>
+              </div>
+              <div class="project-preview preview-document" aria-hidden="true">
+                <i>[NPV·B/C]</i><i>[LCC]</i><i>[민감도]</i>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-index">05</div>
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span class="status status-green">PUBLIC</span>
+                  <span>2025 · <span class="ko">유성구청 인턴</span><span class="en">Intern, Yuseong-gu Office</span> · Spatial Analysis</span>
+                </div>
+                <h3><span class="ko">이륜차 사고 위험구간 분석 및 대응 전략</span><span class="en">Motorcycle accident hotspot analysis &amp; response strategy</span></h3>
+                <p>
+                  <span class="ko">교차로별 위험지수(ARI)로 이륜차 사고가 몰리는 구간을 찾고, 자치구 권한 안에서 실행할 수 있는 대응 전략을 정리했습니다.</span>
+                  <span class="en">Located motorcycle-accident hotspots with an intersection risk index (ARI) and proposed countermeasures within the district's authority.</span>
                 </p>
                 <div class="tag-list">
                   <span>ARI 산식</span><span>QGIS</span><span>공간결합</span><span>정책분석</span>
                 </div>
 
                 <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
+                  <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
 
                   <figure class="method-diagram">
                     <figcaption>분석 프로세스</figcaption>
@@ -562,33 +685,24 @@
 
                   <dl class="project-detail-body">
                     <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>배달 수요 증가에 따른 이륜차 사고 지속 발생</li>
-                          <li>전면 번호판 부재로 현장 단속 곤란</li>
-                          <li>자치구 차원의 직접 단속 권한 제한</li>
-                        </ul>
-                      </dd>
+                      <dt>문제</dt>
+                      <dd><ul>
+                        <li>배달 수요 증가로 이륜차 사고가 늘지만, 전면 번호판이 없어 현장 단속이 어렵고 자치구의 직접 단속 권한도 제한적</li>
+                        <li>사고가 몰리는 구간을 찾아 자치구가 할 수 있는 대책을 구분해야 함</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>데이터</dt>
-                      <dd>
-                        <ul>
-                          <li>경찰청 이륜차 사고 이력</li>
-                          <li>지자체 교차로·신호등 위치</li>
-                          <li>주요도로 교통량</li>
-                        </ul>
-                      </dd>
+                      <dd><ul>
+                        <li>경찰청 이륜차 사고 이력, 지자체 교차로·신호등 위치, 주요도로 교통량</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>방법</dt>
                       <dd>
                         <ul>
-                          <li>교차로 중심점 기준 좌표 통일</li>
-                          <li>「도로교통법 시행규칙」 위험지수 산식 및 TAAS 분석 반경(100m) 적용, 교차로별 ARI 산정</li>
-                          <li>ARI 상위 2.5% 교차로를 고위험 구간으로 분류</li>
-                          <li>요일·시간대·연령·도로유형별 특성 비교, 대응 전략 구분</li>
+                          <li>교차로 중심점 기준 좌표 통일, 「도로교통법 시행규칙」 위험지수 산식과 TAAS 분석 반경(100m)으로 교차로별 ARI 산정</li>
+                          <li>ARI 상위 2.5% 교차로를 고위험 구간으로 분류, 요일·시간대·연령·도로유형별 특성 비교</li>
                         </ul>
                         <figure class="method-diagram">
                           <figcaption>ARI 측정 방식 (예시, 가상 데이터)</figcaption>
@@ -608,13 +722,17 @@
                           <img src="assets/projects/motorcycle-hotspot-route.png" width="526" height="658" alt="이륜차 사고 다발 구간 시각화: 유성온천역 인근을 지나는 약 1.9km 구간">
                         </figure>
                         <ul>
-                          <li>유성온천역 인근 1.9km 구간 도출 (교차로 비중 1.67% 대비 사고 비중 14.33%, 밀도 44.2건/km)</li>
-                          <li>요일: 목요일·일요일 집중 / 시간대: 정오 전후·야간 집중</li>
-                          <li>연령: 20대 초반·40대 후반 비중 높음</li>
-                          <li>법규 위반 유형: 신호위반 &gt; 안전운전 불이행</li>
-                          <li>대응 전략: 자치구 단독(맞춤형 안전 홍보, 시민참여 리빙랩) / 유관기관 협력(무인단속장비 설치 우선순위 제안, 위반 유형·시간대 기반 단속 방안 제시)</li>
+                          <li>유성온천역 인근 1.9km 구간 도출 — 교차로 비중 1.67% 대비 사고 비중 14.33%, 밀도 44.2건/km</li>
+                          <li>요일: 목요일·일요일, 시간대: 정오 전후·야간, 연령: 20대 초반·40대 후반 집중 / 법규 위반: 신호위반 &gt; 안전운전 불이행</li>
+                          <li>대응 전략: 자치구 단독(맞춤형 안전 홍보, 시민참여 리빙랩) / 유관기관 협력(무인단속장비 설치 우선순위, 위반 유형·시간대 기반 단속)</li>
                         </ul>
                       </dd>
+                    </div>
+                    <div>
+                      <dt>내 역할</dt>
+                      <dd><ul>
+                        <li>데이터 수집·전처리, ARI 산정과 공간분석, 대응 전략 정리</li>
+                      </ul></dd>
                     </div>
                   </dl>
                 </details>
@@ -625,260 +743,23 @@
             </article>
 
             <article class="project-card">
-              <div class="project-index">05</div>
-              <div class="project-copy">
-                <div class="project-meta">
-                  <span class="status status-green">PUBLIC</span>
-                  <span>2026 · 한국종합경제연구원 · Feasibility Study</span>
-                </div>
-                <h3>철도 인프라 경제성·투자효과 분석</h3>
-                <p class="project-en">Economic Feasibility Analysis of Rail Infrastructure</p>
-                <p>
-                  노후전동차 경제성평가와 노후 철도시설 개량투자 효과분석 연구용역에서
-                  대안별 NPV·B/C 산정과 민감도 분석, 발주처 자료요청, 관계법령 검토를 맡았습니다.
-                </p>
-                <div class="tag-list">
-                  <span>LCC</span><span>NPV·B/C</span><span>민감도 분석</span><span>관계법령 검토</span>
-                </div>
-
-                <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
-
-                  <figure class="method-diagram">
-                    <figcaption>분석 프로세스</figcaption>
-                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 노후화·성능평가 체계 비교 → 잔존수명·수리한계비용 산정 → NPV·B/C·LCC 대안 비교 → 할인율 민감도 분석">
-                      <span class="flow-step">노후화·성능평가 체계 비교</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">잔존수명·수리한계비용 산정</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">NPV·B/C·LCC 대안 비교</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">할인율 민감도 분석</span>
-                    </div>
-                  </figure>
-
-                  <dl class="project-detail-body">
-                    <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>5~8호선 노후전동차 경제성평가 연구용역 참여 (착수보고부터 최종보고까지 수행)</li>
-                          <li>노후 철도시설 개량투자 효과분석 연구용역 참여 (진행 중)</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>데이터</dt>
-                      <dd>
-                        <ul>
-                          <li>선행 3개년 노후화·성능평가 보고서</li>
-                          <li>2015년 노후전동차 보고서 (관계법령 인용 부분)</li>
-                          <li>발주처 제공 자료</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>방법</dt>
-                      <dd>
-                        <ul>
-                          <li>선행 3개년 보고서의 노후화 모델·성능평가 체계 변화 비교 검토</li>
-                          <li>발주처 자료요청 목록 정리, 소관부서·회신기한 병기</li>
-                          <li>정밀안전진단 잔존수명 → 대수선 범위 선정 → 경제적 수리한계비용 산정</li>
-                          <li>대안별 NPV·B/C·LCC 직접 산정·비교, 실질할인율을 바꿔가며 민감도 분석</li>
-                          <li>생애주기비용(LCC) 모델 구조 분석 및 호선별 재구성</li>
-                          <li>착수보고 자료 작성, 보고서 작성·수정</li>
-                          <li>관계법령 검토: 2015년 보고서에 인용된 철도안전법·관련 고시를 현행 기준으로 갱신, 개정으로 바뀐 별표 조항 번호 정정</li>
-                        </ul>
-                      </dd>
-                    </div>
-                  </dl>
-                </details>
-              </div>
-              <div class="project-preview preview-document" aria-hidden="true">
-                <i>[LCC]</i><i>[NPV·B/C]</i><i>[민감도]</i>
-              </div>
-            </article>
-
-            <article class="project-card">
               <div class="project-index">06</div>
               <div class="project-copy">
                 <div class="project-meta">
                   <span class="status status-green">PUBLIC</span>
-                  <span>학부 4학년 · 개인 연구 · Regional Decline</span>
+                  <span>2024–2025 · <span class="ko">학부연구생</span><span class="en">Undergraduate researcher</span> · Indicator Design</span>
                 </div>
-                <h3>지방소멸 영향 요인 분석: 다중회귀와 머신러닝 비교</h3>
-                <p class="project-en">Factors Affecting Regional Extinction: Regression vs. Machine Learning</p>
+                <h3><span class="ko">빅데이터 기반 인공지능 도시계획 기술 개발</span><span class="en">AI-based urban planning technology with big data</span></h3>
                 <p>
-                  전국 229개 시군구의 2022년 자료로 소멸위험지수에 영향을 주는 요인을
-                  다중회귀·단계적 회귀·머신러닝으로 비교 분석했습니다.
+                  <span class="ko">와이파이·CCTV 등 정보통신 지표를 직접 설계하고, 상주·유동인구 데이터와 결합해 대표 도시별 지역균형발전 점수를 산출했습니다.</span>
+                  <span class="en">Designed ICT indicators such as Wi-Fi and CCTV coverage, joined them with resident and floating-population data, and scored regional balance for three cities.</span>
                 </p>
                 <div class="tag-list">
-                  <span>다중회귀분석</span><span>단계적 회귀</span><span>머신러닝</span><span>앙상블</span>
+                  <span>지표 설계</span><span>데이터 결합</span><span>GIS</span><span>Python</span>
                 </div>
 
                 <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
-
-                  <figure class="method-diagram">
-                    <figcaption>분석 프로세스</figcaption>
-                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 문헌 고찰·변수 선정 → 데이터 구축·전처리 → 회귀분석·머신러닝 모델 구축 → 모델 평가·비교">
-                      <span class="flow-step">문헌 고찰·변수 선정</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">데이터 구축·전처리</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">회귀·머신러닝 모델 구축</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">모델 평가·비교</span>
-                    </div>
-                  </figure>
-
-                  <dl class="project-detail-body">
-                    <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>인구감소·저출산·고령화와 수도권 집중으로 지방소멸 위험 증가 (2022년 합계출산율 약 0.78명)</li>
-                          <li>기존 연구의 주거·고용 변수에 교육 인프라와 외국인 인구 변수를 더해 분석 범위 확장</li>
-                          <li>변수가 많을 때 생기는 다중공선성을 머신러닝으로 보완, 전통적 회귀분석과 결과 비교</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>데이터</dt>
-                      <dd>
-                        <ul>
-                          <li>전국 시군구 229개, 2022년 자료</li>
-                          <li>KDI 경제정보센터 지역발전지수(2022)를 참고해 독립변수 37개 구축 (주거·인구, 경제활동·고용, 의료·안전서비스, 인프라·환경, 사회·여가서비스, 교육·학습환경)</li>
-                        </ul>
-                        <div class="formula-box">
-                          <p class="formula">소멸위험지수 = 20~39세 여성인구 / 65세 이상 인구</p>
-                          <p class="formula-note">종속변수 · 일본 마스다 보고서에서 처음 제안된 지표</p>
-                        </div>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>방법</dt>
-                      <dd>
-                        <ul>
-                          <li>결측치(평균값 대체)·이상치 처리, 데이터 스케일링</li>
-                          <li>다중회귀분석: 상관분석과 다중공선성(VIF) 검증으로 37개 변수를 8개로 축소 (R² 0.849)</li>
-                          <li>단계적 회귀분석: 전진선택법과 후진제거법을 결합해 12단계로 변수 선택 (R² 0.909)</li>
-                          <li>머신러닝: GBC·Random Forest·XGBoost를 RandomizedSearchCV로 최적화, Stratified K-Fold로 검증</li>
-                          <li>Hard·Soft Voting 앙상블을 비교해 Soft Voting을 최종 모델로 선정 (F1 weighted 0.892)</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>결과</dt>
-                      <dd>
-                        <ul>
-                          <li>세 방법 모두에서 주거·인구, 경제활동·고용, 교육·학습환경 변수가 유의한 영향</li>
-                          <li>빈집 비율·노후주택 비율이 높을수록 소멸 위험 증가, 유치원 취원율·경제활동참가율이 높을수록 소멸 위험 감소</li>
-                          <li>독거노인가구 비율이 높을수록 소멸 위험 증가 (단계적 회귀)</li>
-                          <li>머신러닝 변수 중요도: 1인가구 비율, 유치원 취원율, 1인당 녹지면적 순</li>
-                          <li>시사점: 주거환경 관리, 교육 인프라 확충, 고용 기회 확대, 노인 사회적 고립 해소, 지역 맞춤형 전략</li>
-                        </ul>
-                      </dd>
-                    </div>
-                  </dl>
-                </details>
-              </div>
-              <div class="project-preview preview-chart" aria-hidden="true">
-                <i></i><i></i><i></i><i></i>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-index">07</div>
-              <div class="project-copy">
-                <div class="project-meta">
-                  <span class="status status-green">PUBLIC</span>
-                  <span>2024–2025 · 학부연구생 · Network Analysis</span>
-                </div>
-                <h3>도시 간 관계 네트워크 구축 및 중심성 분석</h3>
-                <p class="project-en">Inter-city Relational Network &amp; Centrality Analysis</p>
-                <p>
-                  시군구 간 관계를 웹·교통·항공 데이터로 네트워크화했습니다.
-                  중심성을 계산해 도시 네트워크가 공간적으로 어떻게 짜이는지 살펴봤습니다.
-                </p>
-                <div class="tag-list">
-                  <span>Python</span><span>웹 크롤링</span><span>중심성 분석</span><span>geopandas</span>
-                </div>
-
-                <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
-
-                  <figure class="method-diagram">
-                    <figcaption>분석 프로세스</figcaption>
-                    <div class="flow-diagram" role="img" aria-label="분석 프로세스: 관계 데이터 구축 → 네트워크 중심성 계산 → 공간 시각화">
-                      <span class="flow-step">관계 데이터 구축</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">중심성 계산</span>
-                      <span class="flow-arrow" aria-hidden="true">→</span>
-                      <span class="flow-step">공간 시각화</span>
-                    </div>
-                  </figure>
-
-                  <dl class="project-detail-body">
-                    <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>한국연구재단 과제 「상호관련성에 기반한 도시의 네트워크와 영향력에 관한 예측 연구」 참여</li>
-                          <li>도시 간 상호작용 정량화를 위한 관계 데이터 직접 구축</li>
-                          <li>과제 결과는 비공개, 데이터 구축 방법과 공개된 학회 발표 범위만 서술</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>데이터</dt>
-                      <!-- TODO: 크롤링 대상 범위 표현 사용자 확인 -->
-                      <dd>
-                        <ul>
-                          <li>국가 도메인(.kr) 웹사이트 간 하이퍼링크 연결관계 (직접 크롤링 구축)</li>
-                          <li>철도 이동·교통량 등 교통 관계</li>
-                          <li>국내 항공편 연결관계</li>
-                        </ul>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>방법</dt>
-                      <dd>
-                        <ul>
-                          <li>시군구 단위 관계 데이터 구축</li>
-                          <li>Python 기반 네트워크 중심성 계산</li>
-                          <li>QGIS·geopandas 기반 공간 시각화</li>
-                          <li>2025년 학회 발표에서 2015년·2023년 국가 R&amp;D 사업 기반 도시 간 연구 협력 관계로 분석 확장, 공동저자 발표</li>
-                        </ul>
-                      </dd>
-                    </div>
-                  </dl>
-                </details>
-              </div>
-              <div class="project-preview preview-network" aria-hidden="true">
-                <i></i><i></i><i></i>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-index">08</div>
-              <div class="project-copy">
-                <div class="project-meta">
-                  <span class="status status-green">PUBLIC</span>
-                  <span>2024–2025 · 학부연구생 · Urban AI</span>
-                </div>
-                <h3>빅데이터 기반 인공지능 도시계획 기술 개발</h3>
-                <p class="project-en">AI-based Urban Planning Technology Development with Big Data</p>
-                <p>
-                  와이파이·CCTV 등 정보통신 지표를 직접 설계하고, 상주·유동인구 데이터와 결합해
-                  대표 도시별 지역균형발전 점수를 산출했습니다.
-                </p>
-                <div class="tag-list">
-                  <span>정보통신데이터</span><span>GIS</span><span>지역균형발전</span><span>데이터결합</span>
-                </div>
-
-                <details class="project-detail">
-                  <summary>방법·결과 자세히 보기</summary>
+                  <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
 
                   <figure class="method-diagram">
                     <figcaption>분석 프로세스</figcaption>
@@ -893,37 +774,44 @@
 
                   <dl class="project-detail-body">
                     <div>
-                      <dt>배경</dt>
-                      <dd>
-                        <ul>
-                          <li>국토교통과학기술진흥원 지원 과제 「빅데이터 기반 인공지능 도시계획 기술 개발」 참여</li>
-                          <li>와이파이·CCTV·LTE·5G 등 정보통신 데이터 기반 도시계획 지표 도출</li>
-                          <li>과제 결과는 비공개, 본인 역할 범위만 서술</li>
-                        </ul>
-                      </dd>
+                      <dt>문제</dt>
+                      <dd><ul>
+                        <li>정보통신 인프라가 지역 간 균형발전을 어떻게 설명하는지 측정 가능한 지표로 만들 수 있는가</li>
+                        <li>국토교통과학기술진흥원 지원 과제 「빅데이터 기반 인공지능 도시계획 기술 개발」의 일부</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>데이터</dt>
-                      <dd>
-                        <ul>
-                          <li>정보통신 데이터: 전자정부이용률, 정보공개 및 이용률, CCTV 커버율, 도시데이터센서활용률, 인터넷 커버리지율(5G·LTE 등), 공공와이파이 커버리지</li>
-                          <li>상주인구·유동인구 데이터</li>
-                        </ul>
-                      </dd>
+                      <dd><ul>
+                        <li>정보통신 데이터: 전자정부이용률, 정보공개 및 이용률, CCTV 커버율, 도시데이터센서활용률, 인터넷 커버리지율(5G·LTE 등), 공공와이파이 커버리지</li>
+                        <li>상주인구·유동인구 데이터</li>
+                      </ul></dd>
                     </div>
                     <div>
                       <dt>방법</dt>
                       <dd>
                         <ul>
-                          <li>정보통신 분야 지표(공공와이파이 서비스율, CCTV 커버율, 인터넷 커버리지율 등) 정의 및 GIS·Python 기반 산출 방법 설계</li>
-                          <li>상주·유동인구 데이터 결합</li>
-                          <li>도시 규모별 대표 도시(대도시 부산, 중소도시 천안, 소도시 담양) 지역균형발전 점수 직접 산출</li>
+                          <li>정보통신 분야 지표 정의와 GIS·Python 기반 산출 방법 설계</li>
+                          <li>상주·유동인구 데이터와 결합, 도시 규모별 대표 도시(대도시 부산, 중소도시 천안, 소도시 담양)의 지역균형발전 점수 산출</li>
                         </ul>
                         <div class="formula-box">
                           <p class="formula">공공와이파이 서비스율(%) = 서비스 면적 내 활동인구 / 전체 활동인구 × 100</p>
                           <p class="formula-note">직접 설계한 정보통신 지표 중 하나(예시) · 전자정부이용률·CCTV 커버율·인터넷 커버리지율 등도 유사한 방식으로 산출</p>
                         </div>
                       </dd>
+                    </div>
+                    <div>
+                      <dt>결과</dt>
+                      <dd><ul>
+                        <li>과제 결과는 비공개. 지표 정의서와 도시별 점수표를 산출물로 작성</li>
+                        <li><mark class="todo">TODO: 결과 수치 (공개 가능한 범위가 있다면)</mark></li>
+                      </ul></dd>
+                    </div>
+                    <div>
+                      <dt>내 역할</dt>
+                      <dd><ul>
+                        <li>정보통신 지표 정의·산출 방법 설계, 데이터 결합, 세 도시 점수 직접 산출, 지표 설명서 작성</li>
+                      </ul></dd>
                     </div>
                   </dl>
                 </details>
@@ -934,20 +822,279 @@
             </article>
           </div>
 
-          <p class="side-project-heading">업무 도구·개인 프로젝트 — 과제와 무관하게 만든 것</p>
+          <details class="project-group">
+            <summary>
+              <span class="project-group-title"><span class="ko">도시계획 실무</span><span class="en">Urban-planning practice</span></span>
+              <span class="project-group-sub"><span class="ko">어린이집 수요 분석 · 평택시 제안 — 데이터 분석보다 계획 실무에 가까운 작업</span><span class="en">Childcare demand study · Pyeongtaek proposal — closer to planning practice than data science</span></span>
+            </summary>
+
+            <div class="project-list project-list-nested">
+              <article class="project-card">
+                <div class="project-index">P1</div>
+                <div class="project-copy">
+                  <div class="project-meta">
+                    <span class="status status-green">PUBLIC</span>
+                    <span>2025 · <span class="ko">유성구청 인턴</span><span class="en">Intern, Yuseong-gu Office</span> · Facility Planning</span>
+                  </div>
+                  <h3><span class="ko">장대행복주택 국공립어린이집 수요 분석</span><span class="en">Childcare facility demand for a new public housing complex</span></h3>
+                  <p>
+                    <span class="ko">신축 공공주택에 국공립 어린이집이 필요한지, 입주 전후 시나리오로 나눠 시설확충최적화지수를 비교했습니다.</span>
+                    <span class="en">Compared a facility-expansion index before and after move-in to judge whether a new public housing complex needs a public daycare centre.</span>
+                  </p>
+                  <div class="tag-list">
+                    <span>시설확충최적화지수</span><span>가중치</span><span>GIS</span>
+                  </div>
+
+                  <details class="project-detail">
+                    <summary><span class="ko">문제·데이터·방법·결과 보기</span><span class="en">Problem · data · method · results</span></summary>
+
+                    <figure class="method-diagram">
+                      <figcaption>분석 프로세스</figcaption>
+                      <img src="assets/projects/childcare-process.png" width="1232" height="672" alt="분석 프로세스: 1.데이터 수집 → 2.데이터 전처리 → 3.데이터 통합·현황분석 → 4.장래 국공립어린이집 수요 추정">
+                    </figure>
+
+                    <dl class="project-detail-body">
+                      <div>
+                        <dt>문제</dt>
+                        <dd><ul>
+                          <li>500세대 이상 공동주택은 어린이집을 국공립으로 운영해야 함 (「영유아보육법 시행령」 제19조의2). 입주 예정 단지에 설치가 필요한가</li>
+                        </ul></dd>
+                      </div>
+                      <div>
+                        <dt>데이터</dt>
+                        <dd><ul>
+                          <li>지자체 제공 아동일람표·어린이집현황·어린이집일람표</li>
+                          <li>공공데이터포털 집계구별 인구·주민등록 인구 통계</li>
+                        </ul></dd>
+                      </div>
+                      <div>
+                        <dt>방법</dt>
+                        <dd>
+                          <ul>
+                            <li>행정안전부 보육 서비스 빅데이터 분석모델(2018) 적용</li>
+                            <li>영유아·가임기 여성 인구 점수와 접근성 점수로 시설확충최적화지수 산출, 백분위 기준 6등급 구분</li>
+                            <li>입주 전 / 입주 후 두 시나리오 비교</li>
+                          </ul>
+                          <div class="formula-box">
+                            <p class="formula">시설확충최적화지수 = 인구현황점수 × 0.6 + 접근성점수 × 0.4</p>
+                            <p class="formula-note">인구현황점수 = 영유아 점수 + 가임기 여성 점수 · 접근성점수 = 이용자 접근성 점수<br>「보육 서비스 강화를 위한 빅데이터 분석」, 행정안전부, 2018</p>
+                          </div>
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>결과</dt>
+                        <dd>
+                          <figure class="method-diagram">
+                            <figcaption>시설확충최적화등급 — 입주 전(왼쪽) vs 입주 후(오른쪽)</figcaption>
+                            <div class="method-diagram-pair">
+                              <img src="assets/projects/childcare-grade-pre.png" width="1169" height="582" alt="입주 전 시설확충최적화등급 지도: 온천2동_1_1 집계구가 3.다소낮음 등급으로 표시된 유성구 지도">
+                              <img src="assets/projects/childcare-grade-post.png" width="1144" height="642" alt="입주 후 시설확충최적화등급 지도: 온천2동_1_1 집계구가 4.다소우선 등급으로 상승해 표시된 유성구 지도">
+                            </div>
+                          </figure>
+                          <ul>
+                            <li>입주 전: 지수 28점(3.다소낮음), 평균(36점) 대비 -8점, 상위 68.4%</li>
+                            <li>입주 후: 지수 44점(4.다소우선), 평균(37점) 대비 +7점, 상위 23.7% — 순위 상승폭 약 45%p</li>
+                            <li>입주 시점에 맞춘 국공립 어린이집 확충 사전 검토 제안</li>
+                          </ul>
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>내 역할</dt>
+                        <dd><ul>
+                          <li>데이터 결합, 단지 인구 추정, 지수 산정과 시나리오 비교</li>
+                        </ul></dd>
+                      </div>
+                    </dl>
+                  </details>
+                </div>
+                <div class="project-preview preview-document" aria-hidden="true">
+                  <i>[영유아]</i><i>[접근성]</i><i>[지수]</i>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-index">P2</div>
+                <div class="project-copy">
+                  <div class="project-meta">
+                    <span class="status status-green">PUBLIC</span>
+                    <span>2026 · <span class="ko">한국종합경제연구원</span><span class="en">KIEC</span> · Planning Proposal</span>
+                  </div>
+                  <h3><span class="ko">평택시 농촌공간재구조화 수립용역 제안</span><span class="en">Proposal for the Pyeongtaek rural spatial restructuring plan</span></h3>
+                  <p>
+                    <span class="ko">제안서 준비 과정에서 시의회 안건과 부서 업무보고로 지역 현안의 흐름을 진단하고, 도시 확장 계획과 농촌공간이 충돌하는 지점을 정리했습니다.</span>
+                    <span class="en">Traced local issues through council agendas and departmental reports, and mapped where urban-expansion plans conflict with rural space.</span>
+                  </p>
+                  <div class="tag-list">
+                    <span>현안 진단</span><span>상위계획 검토</span><span>공개자료 분석</span>
+                  </div>
+
+                  <details class="project-detail">
+                    <summary><span class="ko">문제·데이터·방법 보기</span><span class="en">Problem · data · method</span></summary>
+
+                    <dl class="project-detail-body">
+                      <div>
+                        <dt>문제</dt>
+                        <dd><ul>
+                          <li>농촌공간재구조화법 시행(2024)으로 농촌공간계획 수립 수요가 늘어난 가운데, 평택시의 현안과 상위계획을 어떻게 진단해 제안 방향으로 연결할 것인가</li>
+                        </ul></dd>
+                      </div>
+                      <div>
+                        <dt>데이터</dt>
+                        <dd><ul>
+                          <li>평택시의회 안건, 부서별 업무보고 (2024~2025) — 모두 공개자료</li>
+                          <li>2040 도시기본계획, 2030 도시관리계획 재정비, 지제역세권 공공주택지구 등 상위·관련 계획</li>
+                        </ul></dd>
+                      </div>
+                      <div>
+                        <dt>방법</dt>
+                        <dd><ul>
+                          <li>시의회 안건·업무보고를 시기별로 정리해 현안 흐름 진단</li>
+                          <li>도시 확장 계획과 농촌공간이 충돌하는 지점 정리, 진단 결과를 제안 방향에 반영</li>
+                        </ul></dd>
+                      </div>
+                      <div>
+                        <dt>결과</dt>
+                        <dd><ul>
+                          <li>제안서 고유 전략과 미공개 자료는 비공개. 공개자료 기반 진단 방법만 기재</li>
+                        </ul></dd>
+                      </div>
+                      <div>
+                        <dt>내 역할</dt>
+                        <dd><ul>
+                          <li>현안·상위계획 진단 파트 작성</li>
+                        </ul></dd>
+                      </div>
+                    </dl>
+                  </details>
+                </div>
+                <div class="project-preview preview-document" aria-hidden="true">
+                  <i>[안건]</i><i>[업무보고]</i><i>[상위계획]</i>
+                </div>
+              </article>
+            </div>
+          </details>
+
+          <p class="side-project-heading"><span class="ko">엔지니어링 — 직접 만든 도구</span><span class="en">Engineering — tools I built</span></p>
           <div class="side-project-list">
             <article class="side-project-card">
-              <h4>나라장터 입찰공고 자동 수집</h4>
-              <p>Python과 SQLite로 입찰공고를 수집·저장하고, 새 공고를 텔레그램으로 알려줍니다.</p>
+              <h4><span class="ko">나라장터 입찰공고 자동 수집 파이프라인</span><span class="en">Procurement-notice collection pipeline</span></h4>
+              <p>
+                <span class="ko">입찰공고를 수집해 SQLite에 저장하고, 이전 수집분과 비교해 새 공고만 골라 텔레그램으로 알립니다. 수집 → 저장 → 중복 제거 → 알림의 작은 데이터 파이프라인입니다.</span>
+                <span class="en">Collects public procurement notices into SQLite, de-duplicates against earlier runs and pushes only new notices to Telegram — a small collect → store → dedupe → notify pipeline.</span>
+              </p>
+              <div class="tag-list"><span>Python</span><span>SQLite</span><span>Telegram Bot</span></div>
+              <p class="side-note"><mark class="todo">TODO: 수집 주기·OpenAPI 사용 여부, GitHub 링크</mark></p>
             </article>
             <article class="side-project-card">
-              <h4>연도별 항공사진 수집</h4>
-              <p>국토지리정보원 API로 특정 좌표의 연도별 항공사진을 모아 A4 PDF로 출력합니다.</p>
+              <h4><span class="ko">연도별 항공사진 API 수집</span><span class="en">Historical aerial-photo fetcher</span></h4>
+              <p>
+                <span class="ko">국토지리정보원 API로 특정 좌표의 연도별 항공사진을 모아 A4 PDF로 출력합니다.</span>
+                <span class="en">Fetches aerial photos of a coordinate by year from the NGII API and lays them out as an A4 PDF.</span>
+              </p>
+              <div class="tag-list"><span>Python</span><span>OpenAPI</span><span>PDF</span></div>
+              <p class="side-note"><mark class="todo">TODO: GitHub 링크</mark></p>
             </article>
             <article class="side-project-card">
-              <h4>평양냉면 맛집 인터랙티브 지도</h4>
-              <p>전국 평양냉면 맛집을 표시한 웹 지도입니다. 휴대폰으로 봐도 깨지지 않게 만들었습니다.</p>
-              <a href="naengmyeon-map.html" target="_blank" rel="noreferrer">지도 열어보기 ↗</a>
+              <h4><span class="ko">평양냉면 맛집 인터랙티브 지도</span><span class="en">Interactive Pyongyang-naengmyeon map</span></h4>
+              <p>
+                <span class="ko">전국 평양냉면 맛집을 표시한 웹 지도입니다. 휴대폰에서도 깨지지 않게 만들었습니다.</span>
+                <span class="en">A responsive web map of Pyongyang-style cold-noodle restaurants across Korea.</span>
+              </p>
+              <div class="tag-list"><span>Web</span><span>Leaflet</span></div>
+              <a href="naengmyeon-map.html" target="_blank" rel="noreferrer"><span class="ko">지도 열어보기 ↗</span><span class="en">Open map ↗</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" id="experience">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">EXPERIENCE</p>
+              <h2><span class="ko">경력</span><span class="en">Experience</span></h2>
+            </div>
+          </header>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-period">2025.10–<span class="ko">현재</span><span class="en">present</span></div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-primary">PROFESSIONAL</span>
+                <h3><span class="ko">연구원 · 경제성·타당성 분석</span><span class="en">Researcher · feasibility &amp; economic analysis</span></h3>
+                <p class="organization">(재)한국종합경제연구원 · 학술연구1팀</p>
+                <p>노후전동차 경제성평가·노후 철도시설 개량투자 효과분석 연구용역 수행(NPV·B/C 산정, 민감도 분석, 관계법령 검토), 계획 용역 제안서 작성 참여</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2025.02–2025.09</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-sky">INTERNSHIP</span>
+                <h3><span class="ko">공공빅데이터 청년 인턴</span><span class="en">Public big-data intern</span></h3>
+                <p class="organization">유성구청 (유성형 공공일자리)</p>
+                <p>교통·돌봄 등 행정 데이터를 GIS·수요예측 모델로 분석하고 정책 제안 — 데이터 분석 과제 5건 수행</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2024.06–2025.01</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-violet">RESEARCH</span>
+                <h3><span class="ko">학부연구생 · 도시 네트워크 예측 연구</span><span class="en">Undergraduate researcher · inter-city network prediction</span></h3>
+                <p class="organization">한국연구재단(과학기술정보통신부) 과제 「상호관련성에 기반한 도시의 네트워크와 영향력에 관한 예측 연구」</p>
+                <p>웹·교통·항공 관계 데이터를 네트워크화하고 중심성을 계산해 도시 네트워크의 공간 구조 분석</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2024.01–2025.01</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="status status-violet">RESEARCH</span>
+                <h3><span class="ko">학부연구생 · AI 도시계획 기술 개발</span><span class="en">Undergraduate researcher · AI-based urban planning</span></h3>
+                <p class="organization">국토교통과학기술진흥원 과제 「빅데이터 기반 인공지능 도시계획 기술 개발」</p>
+                <p>정보통신 지표 설계, 상주·유동인구 데이터 결합, 도시 규모별 지역 균형발전 점수 산출</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" id="education">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">EDUCATION &amp; PRESENTATION</p>
+              <h2><span class="ko">학력·발표</span><span class="en">Education &amp; presentation</span></h2>
+            </div>
+          </header>
+
+          <div class="resume-overview-grid">
+            <article class="education-card overview-card">
+              <div class="card-topline">
+                <span>EDUCATION</span>
+                <time>2018.03–2025.02</time>
+              </div>
+              <h3>국립한밭대학교</h3>
+              <p class="accent-text">도시공학과 · 졸업</p>
+              <dl>
+                <div><dt>학위 과정</dt><dd>학사</dd></div>
+                <div><dt>전공</dt><dd>도시공학</dd></div>
+                <div><dt>학점</dt><dd>3.6 / 4.5</dd></div>
+              </dl>
+            </article>
+
+            <article class="presentation-card overview-card">
+              <div class="card-topline">
+                <span>PRESENTATION</span>
+                <time>2025.04</time>
+              </div>
+              <h3><span class="ko">학술발표</span><span class="en">Conference presentation</span></h3>
+              <p class="citation">
+                이지석·오재원·백효진 (2025). 도시 간 연구 협력 네트워크의 공간 구조 분석: 2015년과 2023년 국가 R&amp;D 사업을 중심으로.
+                <em>대한국토·도시계획학회 2025 춘계학술대회</em>, 한양대학교. (공동저자)
+              </p>
+              <p class="citation-note"><mark class="todo">TODO: 발표 제목과 저자 순서 확인</mark></p>
             </article>
           </div>
         </section>
@@ -956,25 +1103,23 @@
           <header class="section-heading">
             <div>
               <p class="section-label">SKILLS</p>
-              <h2>기술</h2>
+              <h2><span class="ko">기술</span><span class="en">Skills</span></h2>
             </div>
           </header>
 
           <div class="skill-grid">
-            <article><span>DATA</span><h3>Python · SQL · Excel · SPSS</h3><p>데이터 수집·정제, 쿼리 작성, 집계, 결과표 구성</p></article>
-            <article><span>GIS</span><h3>QGIS · PyQGIS · Web GIS</h3><p>지오코딩, 버퍼·공간결합, 좌표계 변환, 밀집도 지도화</p></article>
-            <article><span>STATISTICS</span><h3>기술통계 · 상관·회귀분석</h3><p>피어슨·스피어만·켄들 상관분석, 다중·단계적 회귀분석, 위험지수 임계값 산정</p></article>
-            <article><span>PREDICTION</span><h3>수요예측 · 머신러닝</h3><p>코호트 요인법, Prophet, 랜덤포레스트·XGBoost, 앙상블 적용</p></article>
-            <article><span>FEASIBILITY</span><h3>경제성·투자효과 분석</h3><p>NPV·B/C·LCC 대안 비교, 할인율 민감도 분석</p></article>
-            <article><span>CAD</span><h3>AutoCAD</h3><p>Autodesk Certified User 취득, 기초 도면 작성</p></article>
-            <article><span>GRAPHIC</span><h3>Photoshop · GTQ 1급</h3><p>그래픽기술자격 1급 취득, 이미지 편집</p></article>
-            <article><span>DOCUMENT</span><h3>HWP · PowerPoint · Report</h3><p>보고서 작성, 제안서 구성, 문서 스타일 자동화</p></article>
+            <article><span>DATA · ML</span><h3>Python · pandas · scikit-learn · SQL</h3><p>데이터 정제·집계, 회귀·트리 계열 모델링, 교차검증과 하이퍼파라미터 탐색 · PyTorch는 학습 중</p></article>
+            <article><span>COLLECTION · AUTOMATION</span><h3>OpenAPI · 웹 크롤링 · SQLite · 스케줄링</h3><p>공공 OpenAPI와 크롤링으로 수집, SQLite에 적재, 주기 실행과 알림으로 자동화</p></article>
+            <article><span>SPATIAL · GRAPH</span><h3>QGIS · PyQGIS · geopandas · 네트워크 중심성</h3><p>지오코딩, 버퍼·공간결합, 좌표계 변환, 관계 데이터의 그래프화와 중심성 계산</p></article>
+            <article><span>STATISTICS · FORECASTING</span><h3>회귀 · 시계열 · 수요예측</h3><p>다중·단계적 회귀, 상관분석, 코호트 요인법, Prophet, 앙상블 비교</p></article>
+            <article><span>DOMAIN</span><h3>경제성·투자효과 분석</h3><p>NPV·B/C·LCC 대안 비교, 할인율 민감도 분석, 관계법령 검토</p></article>
+            <article class="skill-etc"><span>ETC.</span><h3>AutoCAD · Photoshop · HWP · PowerPoint</h3><p>도면·그래픽·보고서 작업</p></article>
           </div>
 
           <p class="section-note">
-            통계·SQL·머신러닝·PyQGIS 학습 노트는
-            <a href="https://github.com/rererererete45/certification-notes" target="_blank" rel="noreferrer">학습 노트 저장소 ↗</a>
-            에서 분야별로 확인할 수 있습니다.
+            <span class="ko">학습 기록:</span><span class="en">Study logs:</span>
+            <a href="https://github.com/rererererete45/ds-study" target="_blank" rel="noreferrer">ds-study (SQL 정리) ↗</a> ·
+            <a href="https://github.com/rererererete45/certification-notes" target="_blank" rel="noreferrer">certification-notes ↗</a>
           </p>
         </section>
 
@@ -982,39 +1127,31 @@
           <header class="section-heading">
             <div>
               <p class="section-label">CREDENTIALS</p>
-              <h2>자격·교육</h2>
+              <h2><span class="ko">자격·교육</span><span class="en">Credentials</span></h2>
             </div>
           </header>
 
           <div class="subsection">
             <div class="subsection-title">
-              <h3>취득 자격증</h3>
+              <h3><span class="ko">자격</span><span class="en">Certifications</span></h3>
               <span>기관·취득일</span>
             </div>
 
             <div class="credential-table" role="list">
               <div role="listitem"><strong>빅데이터분석기사</strong><span>한국데이터산업진흥원</span><time>2024.12.20</time></div>
               <div role="listitem"><strong>도시계획기사</strong><span>한국산업인력공단</span><time>2024.09.10</time></div>
-              <div role="listitem"><strong>Autodesk Certified User: AutoCAD®</strong><span>Certiport</span><time>2024.07.11</time></div>
               <div role="listitem"><strong>컴퓨터활용능력 1급</strong><span>대한상공회의소</span><time>2023.12.22</time></div>
-              <div role="listitem"><strong>2종보통</strong><span>한국도로교통공단</span><time>2023.02.02</time></div>
-              <div role="listitem"><strong>도로교통사고감정사</strong><span>한국도로교통공단</span><time>2022.11.01</time></div>
-              <div role="listitem"><strong>GTQ(그래픽기술자격) 1급</strong><span>한국생산성본부</span><time>2022.08.12</time></div>
+              <div role="listitem"><strong>TOEIC</strong><span><mark class="todo">TODO: 2027년 1월 점수 추가</mark></span><time>—</time></div>
             </div>
           </div>
 
           <div class="subsection">
             <div class="subsection-title">
-              <h3>교육·활동</h3>
+              <h3><span class="ko">교육</span><span class="en">Courses</span></h3>
               <span>기관·기간·교육시간</span>
             </div>
 
             <div class="education-list">
-              <article>
-                <div><h4>ESG 지속가능경영 보고서 검증심사원 양성과정</h4><p>지속가능경영보고서 검증전문가로 활용하기 위한 교육</p></div>
-                <span>한국종합경제연구원</span>
-                <time>2026.06.25–06.27 · 18H</time>
-              </article>
               <article>
                 <div><h4>오픈소스 GIS 서비스 개발자 입문 과정</h4><p>오픈소스 GIS 서비스 개발 기초</p></div>
                 <span>LX공간정보아카데미</span>
@@ -1025,8 +1162,25 @@
                 <span>LX공간정보아카데미</span>
                 <time>2026.02.09–02.10 · 14H</time>
               </article>
+            </div>
+          </div>
+
+          <details class="credential-extra">
+            <summary><span class="ko">기타 자격·활동</span><span class="en">Other certificates &amp; activities</span></summary>
+            <div class="credential-table" role="list">
+              <div role="listitem"><strong>Autodesk Certified User: AutoCAD</strong><span>Certiport</span><time>2024.07.11</time></div>
+              <div role="listitem"><strong>2종보통 운전면허</strong><span>한국도로교통공단</span><time>2023.02.02</time></div>
+              <div role="listitem"><strong>도로교통사고감정사</strong><span>한국도로교통공단</span><time>2022.11.01</time></div>
+              <div role="listitem"><strong>GTQ(그래픽기술자격) 1급</strong><span>한국생산성본부</span><time>2022.08.12</time></div>
+            </div>
+            <div class="education-list">
               <article>
-                <div><h4>대전시 스마트도시계획 수립 리빙랩 시민참여단</h4><p>대전시 도시 문제를 시민참여를 통해 해결방안 도출</p></div>
+                <div><h4>ESG 지속가능경영 보고서 검증심사원 양성과정</h4><p>지속가능경영보고서 검증 교육</p></div>
+                <span>한국종합경제연구원</span>
+                <time>2026.06.25–06.27 · 18H</time>
+              </article>
+              <article>
+                <div><h4>대전시 스마트도시계획 수립 리빙랩 시민참여단</h4><p>시민참여로 도시 문제 해결방안 도출</p></div>
                 <span>대전광역시</span>
                 <time>2024.08.20–09.30 · 12H</time>
               </article>
@@ -1041,8 +1195,40 @@
                 <time>2024.03.19–03.28 · 16H</time>
               </article>
             </div>
-          </div>
+          </details>
+        </section>
 
+        <section class="resume-section" id="contact">
+          <header class="section-heading">
+            <div>
+              <p class="section-label">CONTACT</p>
+              <h2><span class="ko">연락</span><span class="en">Contact</span></h2>
+            </div>
+          </header>
+
+          <div class="contact-card">
+            <p>
+              <span class="ko">연구실·진학 관련 문의는 이메일로 주시면 됩니다. 보통 하루 안에 답장합니다.</span>
+              <span class="en">For questions about research or admissions, email is best. I usually reply within a day.</span>
+            </p>
+            <div class="contact-row">
+              <a class="contact-email" href="mailto:yxxyy159@gmail.com">yxxyy159@gmail.com</a>
+              <button type="button" class="button button-primary copy-button copy-button-wide" data-copy="yxxyy159@gmail.com" aria-label="이메일 주소 복사">
+                <svg class="copy-button-icon" viewBox="0 0 20 20" aria-hidden="true">
+                  <rect x="6.5" y="6.5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                  <path d="M4.5 13.5v-7a2 2 0 0 1 2-2h7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                </svg>
+                <span class="ko">이메일 복사</span><span class="en">Copy email</span>
+                <span class="copy-button-label">복사됨</span>
+              </button>
+            </div>
+            <div class="contact-links">
+              <a href="https://github.com/rererererete45" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://github.com/rererererete45/ds-study" target="_blank" rel="noreferrer">ds-study ↗</a>
+              <a href="https://github.com/rererererete45/certification-notes" target="_blank" rel="noreferrer">certification-notes ↗</a>
+              <a href="assets/Oh-Jaewon-Portfolio.pdf" download="오재원_포트폴리오.pdf">CV (PDF) ↓</a>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -1051,8 +1237,8 @@
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <strong>오재원 · 도시계획 포트폴리오</strong>
-        <p>Urban Planning · Spatial Data · GIS</p>
+        <strong>오재원 · Data Science Portfolio</strong>
+        <p>Recommendation · RAG &amp; Knowledge Graphs · Public Data</p>
       </div>
       <a href="https://github.com/rererererete45" target="_blank" rel="noreferrer">GitHub ↗</a>
     </div>
